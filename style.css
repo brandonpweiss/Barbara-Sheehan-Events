@@ -97,13 +97,15 @@ header{
 	color: #333;
 	-webkit-box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, .4);
 	box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, .4);
-	padding:20px 0px 0px 0px;
 	position: fixed;
 	z-index: 9999;
 	width: 100%;
 	background: #FFFFFF;
-	margin-top: -100px;
-	height: 90px;
+	height: 75px;
+	top: 0px;
+}
+header .content{
+	width: 1280px;
 }
 #logo{
 	width: 445px;
@@ -187,14 +189,12 @@ nav a:hover{
 	color: #999;
 }
 
-header .content{
-	width: 1280px;
-}
+
 #banner{
 	background: url(images/6.jpg) center center no-repeat;
 	background-size: cover;
 	height: 500px;
-	margin-top: 100px;
+	margin-top: 50px;
 }
 #banner .content{
 	max-width: 960px;
