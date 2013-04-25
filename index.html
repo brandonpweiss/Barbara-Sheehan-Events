@@ -3,17 +3,52 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Barbara Sheehan Events</title>
-	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="normalize.css">
 	<script src="jquery.js"></script>
 	<script src="jquery.fittext.js"></script>
 	<script src="modernizr.js"></script>
+	<script>
+$(function() {
+
+	// grab the initial top offset of the navigation 
+	var sticky_navigation_offset_top = $('#sticky_navigation').offset().top;
+	
+	// our function that decides weather the navigation bar should have "fixed" css position or not.
+	var sticky_navigation = function(){
+		var scroll_top = $(window).scrollTop(); // our current vertical position from the top
+		
+		// if we've scrolled more than the navigation, change its position to fixed to stick to top, otherwise change it back to relative
+		if (scroll_top > sticky_navigation_offset_top) { 
+			$('#sticky_navigation').css({ 'position': 'fixed', 'top':0, 'left':0 });
+		} else {
+			$('#sticky_navigation').css({ 'position': 'relative' }); 
+		}   
+	};
+	
+	// run our function on load
+	sticky_navigation();
+	
+	// and run it again every time you scroll
+	$(window).scroll(function() {
+		 sticky_navigation();
+	});
+	
+	// NOT required:
+	// for this demo disable all links that point to "#"
+	$('a[href="#"]').click(function(event){ 
+		event.preventDefault(); 
+	});
+	
+});
+</script>
 </head>
 <body>
+	<a name="top" id="toptop"></a>
 	<header>
 		<div class="content">
-		<img src="images/FinalLogo.jpg" id="logo" alt="Barbara Sheehan Events">
-		<a href="#" class="button">CONTACT</a>
+		<a href="#" id="top"><img src="images/FinalLogo.jpg" id="logo" alt="Barbara Sheehan Events"></a>
+		<a href="#" id="contactButton" class="button">CONTACT</a>
 		</div>
 	</header>
 	<section id="banner">
@@ -23,59 +58,66 @@
 		<div id="social" class="line">FOR SOCIAL,</div> 
 		<div id="good" class="line">GOOD,</div>
 		<div id="profit" class="line">AND PROFIT</div></div>
-		<a href="#" class="outline">
+		<a href="#" id="learnmore" class="outline">
 		<div class="clean-gray">LEARN MORE</div>
 		</a>
 		</div>
 	</section>
 	<nav>
-		<a href="#">BUZZ</a>
-		<a href="#">APPROACH</a>
-		<a href="#">INTERESTS</a>
-		<a href="#">OUR STORY</a>
-		<a href="#">CONTACT</a>
+		<a href="#" id="navbuzz">BUZZ</a>
+		<a href="#" id="navapproach">APPROACH</a>
+		<a href="#" id="navinterests">INTERESTS</a>
+		<a href="#" id="navabout">OUR STORY</a>
+		<a href="#" id="navcontact">CONTACT</a>
 	</nav>
 	<section id="callouts" class="clearfix">
 		<div class="content clearfix">
-		<div class="callout">
+		<div class="callout clearfix">
+			<div class="wrap clearfix">
 			<h2>Making Memories</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At corporis tempora sint molestias placeat perspiciatis.</p>
 			<div class="drop-shadow lifted rotated resultsframe">
-			<div class="inner4">
+			<div class="inner2">
 				<img src="images/womanhead.png" id="womanhead"alt="">
 			</div>
-			 <a href="" id="one">Learn More ></a>
+		</div>
+			 <a href="#" id="one">Learn More ></a>
 		</div>
 		</div>
 
-		<div class="callout">
+		<div class="callout clearfix">
+			<div class="wrap clearfix">
 		<h2>Building Relationships</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At corporis tempora sint molestias placeat perspiciatis.</p>
 			<div class="drop-shadow lifted rotated resultsframe">
 			<div class="inner3">
 				<img src="images/manhead.png" id="manhead" alt="">
 			</div>
-			 <a href="" id="two">Learn More ></a>
+		</div>
+					 <a href="#" id="two">Learn More ></a>
 		</div>
 	</div>
 
-		<div class="callout">
+		<div class="callout clearfix">
+			<div class="wrap clearfix">
 			<h2>Getting Results</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At corporis tempora sint molestias placeat perspiciatis.</p>
 			<div class="drop-shadow lifted rotated resultsframe">
 			<div class="inner4">
 				<img src="images/womanhead.png" id="womanhead"alt="">
 			</div>
-			 <a href="" id="three">Learn More ></a>
 			</div>
+			<a href="#" id="three">Learn More ></a>
+		</div>
 		</div>
 		</div>
 	</section>
 		
 <div class="shadow" id="shadowone"></div>
-
+		<a name="approach"></a>
 
 	<section id="process">
+
 		<h1>OUR APPROACH</h1>
 		<div class="content clearfix">
 			<div class="box left">
@@ -121,12 +163,11 @@
 				</ul>
 				</div>
 			</div>
-			<div class="gatheringsFor" id="good">
-				<div class="content clearfix">
-					<div class="polaroid2">
-					<img src="images/dancers.jpg" alt="">
-					</div>
-					<div class="right">
+
+			<div class="gatheringsFor clearfix" id="good">
+				<div class="content">
+
+			<div class="right">
 				<h3 class="clearfix">GOOD</h3>
 				<ul>
 					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eum.</li>
@@ -135,7 +176,12 @@
 					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nostrum!</li>
 					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ex.</li>
 				</ul>
-				</div>
+			</div>
+
+			<div class="polaroid2">
+				<img src="images/dancers.jpg" alt="">
+			</div>
+		
 			</div>
 			</div>
 			<div class="gatheringsFor clearfix" id="profit">
@@ -156,8 +202,9 @@
 		</article>
 		</div>
 	</section>
-
+	<a name="buzz"></a>
 	<section id="buzz">
+
 	<div class="content">
 		
 		<h1>Title of a Post</h1>
@@ -170,12 +217,14 @@
 		
 	</div>
 		</section>
+					<a name="interests"></a>
 	<section id="pinterest">
+
 		PINTEREST GOES HERE
 	</section>
-
+			<a name="about"></a>
 	<section id="about">
-		
+
 		<div class="content clearfix">
 		<h1>ABOUT BARBARA SHEEHAN EVENTS</h1>
 		<div class="drop-shadow lifted rotated" id="barbara">
@@ -184,13 +233,16 @@
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis beatae consequatur ab expedita sunt cum ut nesciunt reiciendis mollitia deserunt corrupti natus officiis tenetur tempore illum. Sunt vitae voluptatibus optio dignissimos perspiciatis ea soluta totam laudantium itaque voluptate culpa fugiat. Voluptatem sapiente nihil voluptate delectus blanditiis beatae omnis deserunt quaerat architecto praesentium accusamus ex recusandae. Autem eaque dicta fugit necessitatibus atque ab. Culpa obcaecati architecto veniam molestiae nesciunt inventore quasi temporibus praesentium accusamus nostrum dolorem suscipit labore natus corporis impedit omnis eaque vel ipsum sit distinctio molestias tenetur at rerum voluptatum neque beatae voluptatibus eos alias in perferendis. Architecto voluptatem.</p><br>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi veniam earum voluptates eaque dolor quo magnam saepe ducimus aperiam necessitatibus quam vitae vero laudantium dicta nam sed id consectetur voluptatum iste iusto. Iure vitae reiciendis distinctio velit fugiat vero veniam soluta tenetur minima commodi fuga expedita perspiciatis autem incidunt dolorum quis temporibus vel deleniti! Maxime facilis quisquam nihil autem dicta a assumenda explicabo repudiandae sapiente incidunt officiis neque aliquid nemo iste facere magnam voluptate. Delectus veritatis nam ducimus ut magni </p>
 		</div>
-
 	</section>
-	<section id="contact">
-		<div class="content clearfix">
+		<a name="contact"></a>
+<section id="contact">
+
+	<div class="content clearfix">
 	<h1>CONTACT</h1>
+
   <form name="contactform"  method="post" action="send_form_email.php">
-    <div class="column">
+
+    <div class="column clearfix">
       <input type="text" id="first_name" name="first_name" placeholder="Jane">
       <br>
       <label>FIRST NAME</label>
@@ -207,7 +259,8 @@
       <br>
       <label>PHONE NUMBER</label>
     </div>
-    <div class="column">
+
+    <div class="column clearfix">
       <textarea name="comments" id="comments" placeholder="submit your questions/comments, and enter your email to signup for our newsletter"></textarea>
       <br>
       <label>QUESTIONS & COMMENTS</label>
@@ -216,17 +269,20 @@
       <input type="submit" class="clean-gray" value="CLICK TO SUBMIT">
     </div>
   </form>
-  <div class="column" id="info"> <a href="mailto:Barbara@BarbaraSheehaEevents.com">Barbara@BarbaraSheehaEevents.com</a><br>
+
+  <div class="column clearfix" id="info"> <a href="mailto:Barbara@BarbaraSheehaEevents.com">Barbara@BarbaraSheehaEevents.com</a><br>
     <br>
     <p>Phone: 215-222-2222</p>
     <br>
   </div>
-		</div>
+</div>
 	</section>
+
 	<footer>
 		<div class="content">
 		&copy;MMXIII Barbara Sheehan Events  |  Site by <a href="http://www.bewiseweb.com">Be Wise</a>
 </div>
 	</footer>
+	<script type="text/javascript" src="scroll.js"></script>
 </body>
 </html>
