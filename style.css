@@ -322,9 +322,10 @@ color: #555555;
 .callout{
 	float:left;
 	width: 33.3%;
+	position: relative;
 }
 .wrap{
-	width: 87%;
+	max-width: 400px;
 	margin: 0 auto;
 }
 .callout h2{
@@ -424,6 +425,10 @@ background-color: #3ab2cc;
 	left: 184px;
 }
 
+.shadow#shadowone{
+	margin-top: -100px;
+}
+
 
 #handshake{
 	position: relative;
@@ -438,10 +443,11 @@ background-color: #3ab2cc;
 	padding: 50px 0px 50px 0px;
 }
 #buzz .content{
-	padding: 40px;
+padding: 40px;
 -webkit-box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, .5);
 box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, .5);
 background: #FFFFFF;
+width: 91%;
 }
 #buzz h1{
 	background: #3ab2cc url() 0 0 no-repeat;
@@ -461,6 +467,22 @@ background: #FFFFFF;
 	color: #333;
 	font-family: helvetica;
 	letter-spacing: 2px;
+}
+#buzz .polaroid{
+	margin-top: 70px;
+	float:left;
+	width: 20%;
+	margin-right: 3%;
+	-webkit-transform:rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+-ms-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-backface-visibility:hidden; /*prevent rotated text in the caption being jagged in Chrome and Safari*/
+}
+
+#buzz .polaroid img{
+	width: 100%;
 }
 
 .polaroid {
@@ -596,15 +618,6 @@ transform: rotate(1deg);
 	text-align: left;
 	letter-spacing: 4px;
 }
-
-
-#gatherings #good h3{
-	text-align: right;
-}
-
-#gatherings #good ul{
-	text-align: left;
-}
 .gatheringsFor{
 	clear:both;
 }
@@ -670,7 +683,6 @@ clear:both;
 }
 #gatherings #good h3{
 	position: relative;
-	left: -40px;
 }
 #gatherings #good ul{
 	text-align: left;
@@ -683,8 +695,6 @@ clear:both;
 	padding-bottom: 100px;
 	max-width: 1170px;
 }
-
-
 .gatheringsFor .polaroid img {
   border: 10px solid #fffff3;
   border-bottom: 45px solid #fffff3;
@@ -762,6 +772,9 @@ background: #FFFFFF;
 	padding: 100px 0px 100px 0px;
 	background: #000;
 }
+#contact .content{
+	margin: 0 auto;
+}
 #contact p{
 	color: #FFFFFF;
 	font-size: 16px;
@@ -803,7 +816,12 @@ form label {
 
 .column {
 	float: left;
-	width: 430px;
+	width: 33.3%;
+	text-align: center;
+}
+
+#col1{
+text-align: left;
 }
 
 #info {
@@ -811,6 +829,7 @@ form label {
 	font-size: 25px;
 	margin-top: 10px;
 	behavior: url(PIE.htc);
+	text-align: right;
 }
 
 form a {
@@ -827,10 +846,6 @@ form input.clean-gray{
 	margin-top: 0px;
 }
 
-
-.shadow#shadowone{
-margin-bottom: 60px;
-}
 
 .shadow#shadowTwo{
 	margin-top: -25px;
@@ -1127,6 +1142,7 @@ footer a:hover{
                     transform:rotate(0deg);
        }
 
+
 a#toptop{
 	position: relative;
 	top: -100px;
@@ -1202,8 +1218,204 @@ top: 560px;
 	top: 0px;
 	margin: 0px 0px 10px 10px;
 }
-}    
-@media only screen and (max-width: 768px){
+
+.gatheringsFor .polaroid{
+	margin-top: 80px
 }
+}
+
+
+@media only screen and (max-width: 1024px){
+	#col2{
+		float:right;
+	}
+	#info{
+		margin: 0 auto;
+	}
+	.callout p{
+	max-width: 80%;
+}
+#profit h3{
+	margin-left: -20px;
+}
+
+.gatheringsFor .polaroid3 {
+	position: relative;
+	margin-top: 0px;
+	top: 60px;
+	-webkit-transform:rotate(1deg);
+-moz-transform: rotate(1deg);
+-o-transform: rotate(1deg);
+-ms-transform: rotate(1deg);
+transform: rotate(1deg);
+max-width: 50%;
+-webkit-backface-visibility:hidden; /*prevent rotated text in the caption being jagged in Chrome and Safari*/
+}
+ 
+.gatheringsFor .polaroid3 img {
+  border: 10px solid #fffff3;
+  border-bottom: 45px solid #fffff3;
+  -webkit-box-shadow: 3px 3px 3px 3px #999;
+     -moz-box-shadow: 3px 3px 3px 3px #999;
+          box-shadow: 3px 3px 3px 3px #999;
+          	max-width: 100%;
+}
+
+#process{
+	padding-bottom: 0px;
+}
+#buzz .polaroid{
+	max-width: 19%;
+	margin-right: 3%;
+}
+}
+
+@media only screen and (max-width: 1023px){
+
+.gatheringsFor ul{
+	list-style: outside;
+}
+.gatheringsFor ul li{
+	line-height: 16px;
+	font-size: 12px;
+	color: #000;
+}
+#gatherings #social, #gatherings #profit{
+	text-align: left;
+}
+#gatherings #profit{
+clear:both;
+}
+#gatherings #social h3, #gatherings #profit h3{
+	position:relative; 
+	left: 20%;
+}
+#gatherings #good{
+	width: 100%;
+	padding: 50px 0px 100px 0px;
+}
+#gatherings #good img{
+	float:none;
+}
+#gatherings #good h3{
+	position: relative;
+}
+#gatherings #good ul{
+	text-align: left;
+}
+#good .right{
+	float:right;
+	width: 40%;
+	margin-top: -260px;
+}
+.gatheringsFor{
+	clear:both;
+}
+.gatheringsFor .content{
+	padding: 0px;
+	padding-bottom: 100px;
+	max-width: 1170px;
+}
+
+.gatheringsFor .polaroid{
+	max-width: 30%;
+}
+.gatheringsFor .polaroid img {
+  border: 10px solid #fffff3;
+  border-bottom: 45px solid #fffff3;
+  -webkit-box-shadow: 3px 3px 3px 3px #999;
+     -moz-box-shadow: 3px 3px 3px 3px #999;
+          box-shadow: 3px 3px 3px 3px #999;
+          	max-width: 100%;
+}
+
+.gatheringsFor .polaroid2 {
+	position: relative;
+	margin-top: 0px;
+	position: relative;
+	top: 50px;
+	-webkit-transform:rotate(-1deg);
+-moz-transform: rotate(-1deg);
+-o-transform: rotate(-1deg);
+-ms-transform: rotate(-1deg);
+transform: rotate(-1deg);
+max-width: 40%;
+-webkit-backface-visibility:hidden; /*prevent rotated text in the caption being jagged in Chrome and Safari*/
+}
+ 
+.gatheringsFor .polaroid2 img {
+  border: 10px solid #fffff3;
+  border-bottom: 45px solid #fffff3;
+  -webkit-box-shadow: 3px 3px 3px 3px #999;
+     -moz-box-shadow: 3px 3px 3px 3px #999;
+          box-shadow: 3px 3px 3px 3px #999;
+          max-width: 100%;
+}
+
+
+.gatheringsFor .polaroid3 {
+	position: relative;
+	margin-top: 0px;
+	top: 60px;
+	-webkit-transform:rotate(1deg);
+-moz-transform: rotate(1deg);
+-o-transform: rotate(1deg);
+-ms-transform: rotate(1deg);
+transform: rotate(1deg);
+max-width: 40%;
+-webkit-backface-visibility:hidden; /*prevent rotated text in the caption being jagged in Chrome and Safari*/
+}
+ 
+.gatheringsFor .polaroid3 img {
+  border: 10px solid #fffff3;
+  border-bottom: 45px solid #fffff3;
+  -webkit-box-shadow: 3px 3px 3px 3px #999;
+     -moz-box-shadow: 3px 3px 3px 3px #999;
+          box-shadow: 3px 3px 3px 3px #999;
+          	max-width: 100%;
+}
+
+#col2{
+position: relative;
+left: -50px;
+}
+
+
+#buzz .content{
+width: 85%;
+}
+
+.callout p{
+	max-width: 80%;
+}
+
+#process{
+	padding-bottom: 0px;
+}
+#about{
+	text-align: center;
+}
+#about .drop-shadow{
+	float: none;
+	max-width: 450px;
+	display: inline-block;
+}
+#about p{
+	margin-top: 50px;
+}
+#good{
+	margin-top: -100px;
+	margin-bottom: -100px;
+}
+#profit h3{
+	margin-left: -30px;
+	outline: red solid thin;
+}
+
+#buzz .polaroid{
+	max-width: 19%;
+}
+}
+
 
 
