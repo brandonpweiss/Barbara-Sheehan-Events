@@ -5,41 +5,43 @@
 	<title>Barbara Sheehan Events</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="flexslider.css">
 	<script src="jquery.js"></script>
 	<script src="jquery.fittext.js"></script>
+	<script src="jquery.flexslider.js"></script>
 	<script src="modernizr.js"></script>
 	<script>
 $(function() {
 
-	// grab the initial top offset of the navigation 
+	// grab the initial top offset of the navigation
 	var sticky_navigation_offset_top = $('#sticky_navigation').offset().top;
-	
+
 	// our function that decides weather the navigation bar should have "fixed" css position or not.
 	var sticky_navigation = function(){
 		var scroll_top = $(window).scrollTop(); // our current vertical position from the top
-		
+
 		// if we've scrolled more than the navigation, change its position to fixed to stick to top, otherwise change it back to relative
-		if (scroll_top > sticky_navigation_offset_top) { 
-			$('#sticky_navigation').css({ 'position': 'fixed', 'top':0, 'left':0 });
+		if (scroll_top > sticky_navigation_offset_top) {
+			$('#sticky_navigation').css({ 'position': 'fixed', 'top':75, 'left':0, 'z-index':999});
 		} else {
-			$('#sticky_navigation').css({ 'position': 'relative' }); 
-		}   
+			$('#sticky_navigation').css({ 'position': 'relative', 'top':0, 'left':0 });
+		}
 	};
-	
+
 	// run our function on load
 	sticky_navigation();
-	
+
 	// and run it again every time you scroll
 	$(window).scroll(function() {
 		 sticky_navigation();
 	});
-	
+
 	// NOT required:
 	// for this demo disable all links that point to "#"
-	$('a[href="#"]').click(function(event){ 
-		event.preventDefault(); 
+	$('a[href="#"]').click(function(event){
+		event.preventDefault();
 	});
-	
+
 });
 </script>
 </head>
@@ -51,21 +53,43 @@ $(function() {
 		<a href="#" id="contactButton" class="button">CONTACT</a>
 		</div>
 	</header>
-	<section id="banner">
-		<div class="content">
+	<script>
+	$(window).load(function() {
+  		$('.flexslider').flexslider({
+   	 		animation: "fade"
+  			});
+		});
+	</script>
+	<section class="flexslider">
+		<ul class="slides">
+		<li>
+		<img src="images/6.jpg">
+		<div id="slogan">
+			<div id="top" class="line">COMPELLING EVENTS</div>
+			<div id="social" class="line">FOR SOCIAL,</div>
+			<div id="good" class="line">GOOD,</div>
+			<div id="profit" class="line">AND PROFIT</div></div>
+		<a href="#" id="learnmore" class="outline">
+			<div class="clean-gray">LEARN MORE</div>
+		</a>
+		</li>
+			<li><img src="images/5.jpg"></li>
+		</ul>
+		<!--<div class="content">
 		<div id="slogan">
 		<div id="top" class="line">COMPELLING EVENTS</div>
-		<div id="social" class="line">FOR SOCIAL,</div> 
+		<div id="social" class="line">FOR SOCIAL,</div>
 		<div id="good" class="line">GOOD,</div>
 		<div id="profit" class="line">AND PROFIT</div></div>
 		<a href="#" id="learnmore" class="outline">
 		<div class="clean-gray">LEARN MORE</div>
 		</a>
-		</div>
+		</div>-->
 	</section>
-	<nav>
 		<div id="sticky_navigation_wrapper">
 		<div id="sticky_navigation">
+	<nav>
+
 			<div class="demo_container">
 		<a href="#" id="navbuzz">BUZZ</a>
 		<a href="#" id="navapproach">APPROACH</a>
@@ -73,9 +97,10 @@ $(function() {
 		<a href="#" id="navabout">OUR STORY</a>
 		<a href="#" id="navcontact">CONTACT</a>
 	</div>
-</div>
-</div>
+
 	</nav>
+	</div>
+</div>
 	<section id="callouts" class="clearfix">
 		<div class="content clearfix">
 		<div class="callout clearfix">
@@ -120,7 +145,7 @@ $(function() {
 	</section>
 			<a name="approach"></a>
 <div class="shadow" id="shadowone"></div>
-	
+
 
 	<section id="process">
 
@@ -209,7 +234,7 @@ $(function() {
 	<section id="buzz">
 
 	<div class="content clearfix">
-		
+
 		<h1>Buzz</h1>
 		<h2>Fresh and Fab</h2>
 		<p>
@@ -234,7 +259,7 @@ $(function() {
 		<div class="polaroid">
 		<img src="images/7.png" alt="">
 		</div>
-		
+
 	</div>
 		</section>
 					<a name="interests"></a>
