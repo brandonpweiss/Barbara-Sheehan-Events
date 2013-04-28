@@ -198,7 +198,10 @@ nav a{
 nav a:hover{
 	color: #999;
 }
-
+.flexslider .slides img {
+	min-height: 300px;
+	min-width: 960px;
+}
 
 #banner{
 	/*background: url(images/6.jpg) center center no-repeat;*/
@@ -211,6 +214,13 @@ nav a:hover{
 	max-width: 960px;
 	outline: white solid thin;
 }
+#carousel .content {
+	position:absolute;
+	top:5px;
+	height: 100%;
+	width: 100%;
+
+}
 #slogan{
 	display: inline-block;
 	font-size: 20px;
@@ -219,7 +229,7 @@ nav a:hover{
 	font-family: 'skarpalt';
 	position: absolute;
 	top: 30%;
-	left: 15%;
+	left: 11%;
 }
 
 #slogan #top{
@@ -259,7 +269,7 @@ a.outline{
 	float:right;
 	position: absolute;
 	top: 80%;
-	right: 20%;
+	left: 18%;
 	background: rgba(255,255,255,.3);
 	padding: 0px;
 	display: block;
@@ -760,10 +770,16 @@ transform: rotate(1deg);
           	width: 500px;
 }
 
-
+/*/////////////////////////////////////////////////////////////
+############# PINTEREST ########################
+//////////////////////////////////////////////////////////// */
 #pinterest{
 padding: 100px;
 background: #FFFFFF;
+}
+.center {
+	margin: 0 auto;
+	width:817px;
 }
 #about{
 	background: #EEEEEE;
@@ -1169,7 +1185,7 @@ a#toptop{
 	min-height: 700px;
 }
 a.outline{
-top: 560px;
+/*top: 560px;*/
 }
 
 }

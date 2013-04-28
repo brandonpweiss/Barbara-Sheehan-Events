@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
+<script type="text/javascript">
+(function(d){
+  var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');
+  p.type = 'text/javascript';
+  p.async = true;
+  p.src = '//assets.pinterest.com/js/pinit.js';
+  f.parentNode.insertBefore(p, f);
+}(document));
+</script>
 	<meta charset="UTF-8">
 	<title>Barbara Sheehan Events</title>
 	<link rel="stylesheet" href="style.css">
@@ -56,23 +65,16 @@ $(function() {
 	<script>
 	$(window).load(function() {
   		$('.flexslider').flexslider({
-   	 		animation: "fade"
+   	 		animation: "slide"
   			});
 		});
 	</script>
-	<section class="flexslider">
+	<section id="carousel">
+	<div class="flexslider">
 		<ul class="slides">
 		<li>
 			<img src="images/slideshow/2.jpg">
-		</li>
-		<li>
-			<img src="images/slideshow/3.jpg">
-		</li>
-		<li>
-			<img src="images/slideshow/4.jpg">
-		</li>
-		</ul>
-		<div class="content">
+			<div class="content">
 		<div id="slogan">
 		<div id="top" class="line">COMPELLING EVENTS</div>
 		<div id="social" class="line">FOR SOCIAL,</div>
@@ -82,6 +84,45 @@ $(function() {
 		<div class="clean-gray">LEARN MORE</div>
 		</a>
 		</div>
+		</li>
+		<li>
+			<img src="images/slideshow/3.jpg">
+						<div class="content">
+		<div id="slogan">
+		<div id="top" class="line">COMPELLING EVENTS</div>
+		<div id="social" class="line">FOR SOCIAL,</div>
+		<div id="good" class="line">GOOD,</div>
+		<div id="profit" class="line">AND PROFIT</div></div>
+		<a href="#" id="learnmore" class="outline">
+		<div class="clean-gray">LEARN MORE</div>
+		</a>
+		</div>
+		</li>
+		<li>
+			<img src="images/slideshow/4.jpg">
+						<div class="content">
+		<div id="slogan">
+		<div id="top" class="line">COMPELLING EVENTS</div>
+		<div id="social" class="line">FOR SOCIAL,</div>
+		<div id="good" class="line">GOOD,</div>
+		<div id="profit" class="line">AND PROFIT</div></div>
+		<a href="#" id="learnmore" class="outline">
+		<div class="clean-gray">LEARN MORE</div>
+		</a>
+		</div>
+		</li>
+		</ul></div>
+
+		<!-- <div class="content">
+		<div id="slogan">
+		<div id="top" class="line">COMPELLING EVENTS</div>
+		<div id="social" class="line">FOR SOCIAL,</div>
+		<div id="good" class="line">GOOD,</div>
+		<div id="profit" class="line">AND PROFIT</div></div>
+		<a href="#" id="learnmore" class="outline">
+		<div class="clean-gray">LEARN MORE</div>
+		</a>
+		</div> -->
 	</section>
 		<div id="sticky_navigation_wrapper">
 		<div id="sticky_navigation">
@@ -261,8 +302,9 @@ $(function() {
 		</section>
 					<a name="interests"></a>
 	<section id="pinterest">
-
-		PINTEREST GOES HERE
+		<div class="center">
+			<a data-pin-do="embedBoard" href="http://pinterest.com/pinterest/pin-pets/" data-pin-scale-width="200" data-pin-scale-height="400" data-pin-board-width="1400"></a>
+		</div>
 	</section>
 			<a name="about"></a>
 	<section id="about">
