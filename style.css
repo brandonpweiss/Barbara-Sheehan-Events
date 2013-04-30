@@ -238,6 +238,7 @@ nav a#navcontact{
 	position: absolute;
 	top: 30%;
 	left: 11%;
+	z-index: 999;
 }
 
 #slogan #top{
@@ -274,10 +275,10 @@ nav a#navcontact{
 }
 
 a.outline{
-	float:right;
 	position: absolute;
-	top: 80%;
-	left: 18%;
+	bottom: 10%;
+	right: 12%;
+	z-index:999;
 	background: rgba(255,255,255,.3);
 	padding: 0px;
 	display: block;
@@ -1443,10 +1444,11 @@ width: 85%;
 #about p{
 	margin-top: 50px;
 }
-#good{
+/* commented out by RC was causing slogan to break apart on window resize.
+/*#good{
 	margin-top: -100px;
 	margin-bottom: -100px;
-}
+}*/
 #profit h3{
 	margin-left: -30px;
 }
