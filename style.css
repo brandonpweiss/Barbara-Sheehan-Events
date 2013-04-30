@@ -238,7 +238,7 @@ nav a#navcontact{
 	position: absolute;
 	top: 30%;
 	left: 11%;
-	z-index: 999;
+	z-index: 998;
 }
 
 #slogan #top{
@@ -278,7 +278,7 @@ a.outline{
 	position: absolute;
 	bottom: 10%;
 	right: 12%;
-	z-index:999;
+	z-index:998;
 	background: rgba(255,255,255,.3);
 	padding: 0px;
 	display: block;
@@ -1487,7 +1487,7 @@ text-align: center;
 	padding: 0px;
 	margin: 0 auto;
 	max-width: 100%;
-	margin-bottom: 40px;	
+	margin-bottom: 40px;
 }
 .wrap p{
 	max-width: 100%;
@@ -1497,7 +1497,7 @@ text-align: center;
 	display:block;
 	width: 50%;
 	margin-left: -28%;
-	left: 50%;	
+	left: 50%;
 }
 .box{
 	float:none;
