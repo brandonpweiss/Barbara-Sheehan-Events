@@ -163,15 +163,16 @@ a.button:hover{
 	width: 100%;
 	position: relative;
 	z-index: 999999;
+	margin-top: -10px;
 }
 nav{
 text-align: center;
 background: #ffffff; /* Old browsers */
-background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6 */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4 */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10,Safari5.1 */
+background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10 */
+background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10 */
 background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
 -webkit-box-shadow:  1px 1px 1px 1px rgba(1, 1, 1, .3);
@@ -231,14 +232,23 @@ nav a#navcontact{
 }
 #slogan{
 	display: inline-block;
-	font-size: 20px;
 	letter-spacing: 4px;
-	color: #000;
+	color: #FFFFFF;
 	font-family: 'skarpalt';
 	position: absolute;
-	top: 30%;
-	left: 11%;
+	top: 75px;
+	font-size: 45px;
 	z-index: 998;
+	margin-left: 46%;
+	padding-right: 269px;
+	font-weight: bold;
+	text-align: right;
+}
+
+#slogan .trans{
+		background: rgba(1,1,1,.7);
+		display:inline-block;
+		padding: 10px;
 }
 
 #slogan #top{
@@ -270,14 +280,10 @@ nav a#navcontact{
 		width: 150px;
 }
 
-#slogan .line{
-
-}
-
 a.outline{
 	position: absolute;
-	bottom: 10%;
-	right: 12%;
+	bottom: 15%;
+	right: 20%;
 	z-index:998;
 	background: rgba(255,255,255,.3);
 	padding: 0px;
@@ -307,6 +313,7 @@ color: #555555;
   border-bottom: 1px solid #155b6a;
   border-radius: 3px;
   color: #FFF;
+  font-weight: bold;
  font-family: 'skarpalt';
  letter-spacing: 4px;
   padding: 15px 5px 15px 5px;
@@ -672,6 +679,8 @@ transform: rotate(1deg);
 	display: inline-block;
 	padding: 10px;
 	font-family: 'skarpalt';
+		text-shadow: 1px 1px 1px #000;
+	filter: dropshadow(color=#000, offx=1, offy=1);
 
 }
 .gatheringsFor .content{
@@ -682,6 +691,7 @@ transform: rotate(1deg);
 #gatherings{
 	padding-top: 100px;
 	padding-bottom: 100px;
+		letter-spacing: 1px;
 }
 .gatheringsFor ul{
 	list-style: outside;
@@ -699,7 +709,7 @@ clear:both;
 }
 #gatherings #social h3, #gatherings #profit h3{
 	position:relative;
-	left: 20%;
+	left: 15%;
 }
 .gatheringsFor img{
 	width: 500px;
@@ -717,6 +727,7 @@ clear:both;
 }
 #gatherings #good h3{
 	position: relative;
+	left: -10%;
 }
 #gatherings #good ul{
 	text-align: left;
@@ -783,7 +794,7 @@ transform: rotate(1deg);
 ############# PINTEREST ########################
 //////////////////////////////////////////////////////////// */
 #pinterest{
-padding: 100px;
+padding: 50px;
 background: #FFFFFF;
 }
 .center {
@@ -1153,7 +1164,7 @@ footer a:hover{
        	width: 450px;
        	height: 300px;
        }
- .inner2{
+ 		.inner2{
        	background: url(images/results.jpg) 0 0 no-repeat;
        	width: 360px;
        	height: 250px;
@@ -1188,6 +1199,11 @@ a#toptop{
 	top: -100px;
 }
 
+a.aa{
+	position: relative;
+	top: -70px;
+}
+
 
 @media only screen and (min-width: 1441px){
 #banner{
@@ -1201,10 +1217,25 @@ a.outline{
 
 
 @media only screen and (max-width: 1339px){
+
+
+.box p{
+	text-align: left;
+	line-height: 20px;
+	padding: 10px 30px 0px 30px;
+	text-align: justify;
+}
+
+#about #barbara{
+	position: relative;
+	top: 0px;
+	margin-left: 100px;
+}
+}
+@media only screen and (max-width: 1279px){
 .resultsframe{
 	display:none;
 }
-
 .resultsframe #one{
 	display: inline-block;
 }
@@ -1229,18 +1260,6 @@ a.outline{
 	transition: color .3s ease-in-out;
 }
 
-.box p{
-	text-align: left;
-	line-height: 20px;
-	padding: 10px 30px 0px 30px;
-	text-align: justify;
-}
-
-#about #barbara{
-	position: relative;
-	top: 0px;
-	margin-left: 100px;
-}
 }
 @media only screen and (max-width: 1240px){
 .column#info{
@@ -1280,6 +1299,47 @@ a.outline{
 	margin-left: -20px;
 }
 
+#slogan{
+	display: inline-block;
+	font-size: 12px;
+	letter-spacing: 4px;
+	color: #000;
+	font-family: 'skarpalt';
+	position: absolute;
+	top: 30%;
+	left: 15%;
+	z-index: 998;
+}
+
+#slogan #top{
+	background: rgba(255,255,255,1);
+	color: #000000;
+	padding: 5px;
+	position: relative;
+}
+
+#slogan #social{
+		background: rgba(255,98,161,1);
+		padding: 5px;
+		position: relative;
+		color: #FFF;
+		width: 160px;
+}
+#slogan #good{
+		background: rgba(200,200,200,1);
+		padding: 5px;
+		position: relative;
+		color: #000000;
+		width: 90px;
+}
+#slogan #profit{
+		background: rgba(36,134,155,1);
+		padding: 5px;
+		position: relative;
+		color: #FFFFFF;
+		width: 150px;
+}
+
 .gatheringsFor .polaroid3 {
 	position: relative;
 	margin-top: 0px;
@@ -1296,6 +1356,7 @@ max-width: 50%;
 .gatheringsFor .polaroid3 img {
   border: 10px solid #fffff3;
   border-bottom: 45px solid #fffff3;
+ margin-left: 0px;
   -webkit-box-shadow: 3px 3px 3px 3px #999;
      -moz-box-shadow: 3px 3px 3px 3px #999;
           box-shadow: 3px 3px 3px 3px #999;
@@ -1309,6 +1370,7 @@ max-width: 50%;
 	max-width: 19%;
 	margin-right: 3%;
 }
+
 }
 
 @media only screen and (max-width: 1023px){
@@ -1457,8 +1519,10 @@ width: 85%;
 	max-width: 19%;
 }
 }
-
 @media only screen and (max-width: 640px){
+	*{
+		float:none;
+	}
 #contact .content{
 text-align: center;
 }
@@ -1487,7 +1551,7 @@ text-align: center;
 	padding: 0px;
 	margin: 0 auto;
 	max-width: 100%;
-	margin-bottom: 40px;
+	margin-bottom: 40px;	
 }
 .wrap p{
 	max-width: 100%;
@@ -1497,7 +1561,7 @@ text-align: center;
 	display:block;
 	width: 50%;
 	margin-left: -28%;
-	left: 50%;
+	left: 50%;	
 }
 .box{
 	float:none;
@@ -1537,6 +1601,10 @@ footer{
 	/*background-size: cover;*/
 	/*height: 500px;*/
 }
+
+
+
+
 
 
 
