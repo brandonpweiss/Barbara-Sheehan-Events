@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Barbara Sheehan Events</title>
-	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="flexslider.css">
@@ -11,27 +10,6 @@
 	<script src="jquery.fittext.js"></script>
 	<script src="jquery.flexslider.js"></script>
 		<script>
-
-		$(window).resize(function()
-		{
-			if ($(window).width() > 640)
-			{
-				$('#sticky_navigation_wrapper').css('display', 'block');
-			}
-			else if ($(window).width() < 640)
-			{
-				$('#sticky_navigation_wrapper').css('display', 'none');
-			}
-		});
-
-		$(document).ready(function()
-		{
-			$('#navbttn').click(function()
-			{
-					$('#sticky_navigation_wrapper').slideToggle(250);
-			});
-		});
-
 	$(window).load(function() {
   		$('.flexslider').flexslider({
    	 		animation: "slide",
@@ -45,16 +23,16 @@
 	<script src="modernizr.js"></script>
 	<script>
 $(function() {
+
 	// grab the initial top offset of the navigation
-	var nav_offset_top = $('nav').offset().top;
-	var dist_to_nav = nav_offset_top - 75;
+	var sticky_navigation_offset_top = $('#sticky_navigation').offset().top;
 
 	// our function that decides weather the navigation bar should have "fixed" css position or not.
 	var sticky_navigation = function(){
 		var scroll_top = $(window).scrollTop(); // our current vertical position from the top
 
 		// if we've scrolled more than the navigation, change its position to fixed to stick to top, otherwise change it back to relative
-		if ((scroll_top > dist_to_nav)&&($(window).width() > 640)) {
+		if (scroll_top > sticky_navigation_offset_top) {
 			$('#sticky_navigation').css({ 'position': 'fixed', 'top':75, 'left':0, 'z-index':999});
 		} else {
 			$('#sticky_navigation').css({ 'position': 'relative', 'top':0, 'left':0 });
@@ -74,6 +52,7 @@ $(function() {
 	$('a[href="#"]').click(function(event){
 		event.preventDefault();
 	});
+
 });
 </script>
 </head>
@@ -83,7 +62,6 @@ $(function() {
 		<div class="content">
 		<a href="#" id="top"><img src="images/FinalLogo.jpg" id="logo" alt="Barbara Sheehan Events"></a>
 		<a href="#" id="contactButton" class="button">CONTACT</a>
-
 		</div>
 	</header>
 	<section id="carousel">
@@ -110,20 +88,21 @@ $(function() {
 		</a>
 		</div>
 	</section>
-	<div id="navbttn"></div>
-	<div id="sticky_navigation_wrapper">
+		<div id="sticky_navigation_wrapper">
 		<div id="sticky_navigation">
-			<nav>
-				<ul>
-					<li><a href="#" id="navapproach">APPROACH</a></li>
-					<li><a href="#" id="navbuzz">BUZZ</a></li>
-					<li><a href="#" id="navinterests">INTERESTS</a></li>
-					<li><a href="#" id="navabout">ABOUT</a></li>
-					<li><a href="#" id="navcontact">CONTACT</a></li>
-				</ul>
-			</nav>
-		</div>
+	<nav>
+
+			<div class="demo_container">
+		<a href="#" id="navapproach">APPROACH</a>
+		<a href="#" id="navbuzz">BUZZ</a>
+		<a href="#" id="navinterests">INTERESTS</a>
+		<a href="#" id="navabout">ABOUT</a>
+		<a href="#" id="navcontact">CONTACT</a>
 	</div>
+
+	</nav>
+	</div>
+</div>
 	<section id="callouts" class="clearfix">
 		<div class="content clearfix">
 		<div class="callout clearfix">
