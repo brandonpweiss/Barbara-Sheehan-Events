@@ -1190,9 +1190,13 @@ a#toptop{
 	position: relative;
 	top: -100px;
 }
+<<<<<<< HEAD
 #navbttn {
 	display: none;
 }
+=======
+
+>>>>>>> parent of e7355f3... nothing
 
 @media only screen and (min-width: 1441px){
 #banner{
@@ -1464,6 +1468,7 @@ width: 85%;
 }
 
 @media only screen and (max-width: 640px){
+<<<<<<< HEAD
 header {
 	height: 50px;
 }
@@ -1500,6 +1505,8 @@ nav ul li a{
 #slogan, a.outline {
 	display: none;
 }
+=======
+>>>>>>> parent of e7355f3... nothing
 #contact .content{
 text-align: center;
 }
