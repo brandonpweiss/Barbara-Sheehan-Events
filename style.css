@@ -180,7 +180,10 @@ padding-top: 2px;
 padding-bottom: 2px;
 
 }
-nav a{
+nav ul li {
+	display: inline;
+}
+nav ul li a{
 	text-decoration: none;
 	color: #000;
 	font-family: 'skarpalt';
@@ -199,11 +202,11 @@ nav a{
 	transition: color .3s ease-in-out;
 	border-left: #CCCCCC solid thin;
 }
-nav a:hover{
+nav ul li a:hover{
 	color: #999;
 }
 
-nav a#navcontact{
+nav ul li a#navcontact{
  border-right: #CCCCCC solid thin;
 }
 .flexslider .slides img {
@@ -1187,7 +1190,9 @@ a#toptop{
 	position: relative;
 	top: -100px;
 }
-
+#navbttn {
+	display: none;
+}
 
 @media only screen and (min-width: 1441px){
 #banner{
@@ -1459,8 +1464,47 @@ width: 85%;
 }
 
 @media only screen and (max-width: 640px){
+header {
+	height: 50px;
+}
+#logo {
+	margin: 0;
+}
+nav ul li a{
+	width: 100%;
+	border-left: 0;
+	border-bottom: #CCCCCC solid thin;
+}
+#sticky_navigation_wrapper {
+	display: none;
+	height: auto;
+	position: fixed;
+	top: 50px;
+	width: 100%;
+	z-index: 99999;
+}
+#navbttn {
+	display: block;
+	background:url(images/nav-button.png) center center no-repeat;
+	background-color: #ff62a1;
+	background-size: 65% auto;
+	position: fixed;
+	top: 0;
+	height: 50px;
+	right: 0;
+	width: 50px;
+	z-index: 999;
+	cursor: pointer;
+}
+
+#slogan, a.outline {
+	display: none;
+}
 #contact .content{
 text-align: center;
+}
+.flexslider {
+	margin: 35px 0 0 0!important;
 }
 #contact .content .column{
 	float:none;
@@ -1530,7 +1574,8 @@ footer{
 		display:none;
 	}
 	header img#logo{
-		width: 70%;
+		max-width: 318px;
+		width: 85%;
 	}
 	#banner{
 	/*background: url(images/6.jpg) center center no-repeat;*/
