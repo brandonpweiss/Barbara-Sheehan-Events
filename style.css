@@ -1240,11 +1240,12 @@ a.outline{
 
 }
 
-
-@media only screen and (max-width: 1339px){
-.resultsframe{
+@media only screen and (max-width: 1229px){
+	.resultsframe{
 	display:none;
 }
+}
+@media only screen and (max-width: 1339px){
 
 .resultsframe #one{
 	display: inline-block;
