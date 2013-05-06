@@ -55,7 +55,7 @@ $(function() {
 
 		// if we've scrolled more than the navigation, change its position to fixed to stick to top, otherwise change it back to relative
 		if ((scroll_top > dist_to_nav)&&($(window).width() > 640)) {
-			$('#sticky_navigation').css({ 'position': 'fixed', 'top':75, 'left':0, 'z-index':999});
+			$('#sticky_navigation').css({ 'position': 'fixed', 'top':65, 'left':0, 'z-index':999});
 		} else {
 			$('#sticky_navigation').css({ 'position': 'relative', 'top':0, 'left':0 });
 		}
@@ -82,7 +82,6 @@ $(function() {
 	<header>
 		<div class="content">
 		<a href="#" id="top"><img src="images/FinalLogo.jpg" id="logo" alt="Barbara Sheehan Events"></a>
-		<a href="#" id="contactButton" class="button">CONTACT</a>
 		</div>
 	</header>
 	<section id="carousel">
@@ -107,7 +106,7 @@ $(function() {
 		</div>
 
 		<a href="#" id="learnmore" class="outline">
-		<div class="clean-gray">LEARN MORE</div>
+		<div class="clean-gray">SEE OUR APPROACH ></div>
 		</a>
 		</div>
 	</section>
@@ -116,10 +115,10 @@ $(function() {
 		<div id="sticky_navigation">
 			<nav>
 				<ul>
-					<li><a href="#" id="navapproach">APPROACH</a></li>
-					<li><a href="#" id="navbuzz">BUZZ</a></li>
+					<li><a href="#" id="navapproach">OUR APPROACH</a></li>
+					<li><a href="#" id="navevents">EVENTS</a></li>
 					<li><a href="#" id="navinterests">INTERESTS</a></li>
-					<li><a href="#" id="navabout">ABOUT</a></li>
+					<li><a href="#" id="navabout">ABOUT US</a></li>
 					<li><a href="#" id="navcontact">CONTACT</a></li>
 				</ul>
 			</nav>
@@ -169,18 +168,15 @@ $(function() {
 	</section>
 		<a name="approach" class="aa"></a>
 <div class="shadow" id="shadowone"></div>
-
-
 	<section id="process">
-
 		<h1>OUR APPROACH</h1>
 		<div class="content clearfix">
-			<div class="box left">
+			<div class="box left clearfix">
 				<h2>Our Process</h2>
 				<p>Your vision is our inspiration and extraordinary care is given to every last detail in delivering the on budget, event of your dreams.  Whether it’s a sophisticated private soiree, or big and splashy bash, we create through mood and design the magical moments that become treasured memories for you and your guests.  We customize our event planning and collaborate with you to fit your specific needs and budget.
 </p>
 			</div>
-			<div class="box right">
+			<div class="box right clearfix">
 				<h2>Experience Matters</h2>
 				<p>Events are large financial investments that require creativity, massive coordination and attention to detail.   It’s important to know the ropes because mistakes are highly visible, costly and rarely forgotten.  With 25-years experience, and more than 1,000 events under our belt, we’ve earned our event stripes and are ready to execute a flawless event for you.</p>
 			</div>
@@ -202,10 +198,13 @@ $(function() {
 			</div>
 		</article>
 		<div class="shadow" id="shadowTwo"></div>
+		<a name="events" class="aa"></a>
 		<article id="gatherings">
+			<h2>OUR EVENTS</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet at labore accusamus nihil eius quisquam fuga sunt enim earum perferendis.</p>
 			<div class="gatheringsFor clearfix" id="social">
-				<div class="content">
-				<h3>SOCIAL</h3>
+				<div class="content clearfix">
+				<h3>Social</h3>
 				<div class="polaroid">
 				<img src="images/social2.jpg" alt="">
 				</div>
@@ -220,12 +219,12 @@ $(function() {
 			</div>
 
 		<div class="gatheringsFor clearfix" id="good">
-			<div class="content">
+			<div class="content clearfix">
 					<div class="polaroid2">
 						<img src="images/dancers.jpg" alt="">
 					</div>
 				<div class="right">
-				<h3>GOOD</h3>
+				<h3>Good</h3>
 					<ul>
 						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eum.</li>
 						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi repellendus!</li>
@@ -237,8 +236,8 @@ $(function() {
 			</div>
 		</div>
 			<div class="gatheringsFor clearfix" id="profit">
-				<div class="content">
-				<h3>PROFIT</h3>
+				<div class="content clearfix">
+				<h3>Profit</h3>
 				<div class="polaroid3">
 				<img src="images/7.png" alt="">
 				</div>
@@ -255,7 +254,7 @@ $(function() {
 		</div>
 	</section>
 	<a name="buzz" class="aa"></a>
-	<section id="buzz">
+	<!--<section id="buzz">
 
 	<div class="content clearfix">
 
@@ -285,9 +284,10 @@ $(function() {
 		</div>
 
 	</div>
-		</section>
+		</section>-->
 				<a name="interests" class="aa"></a>
 	<section id="pinterest">
+		<h1>INTERESTS</h1>
 		<div class="center">
 			<script type="text/javascript">
 (function(d){

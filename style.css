@@ -234,12 +234,12 @@ nav ul li a#navcontact{
 }
 #slogan{
 	display: inline-block;
-	font-size: 20px;
+	font-size: 40px;
 	letter-spacing: 4px;
 	color: #000;
 	font-family: 'skarpalt';
 	position: absolute;
-	top: 20%;
+	top: 15%;
 	right: 12%;
 	text-align: right;
 	z-index: 998;
@@ -249,7 +249,7 @@ nav ul li a#navcontact{
 	color: #FFFFFF;
 	background: rgba(1,1,1, .7);
 	display: inline-block;
-	font-size: 40px;
+	font-size: 50px;
 	padding: 10px;
 	font-weight: bold;
 
@@ -321,12 +321,14 @@ color: #555555;
   border-bottom: 1px solid #155b6a;
   border-radius: 3px;
   color: #FFF;
+	line-height: 20px;
  font-family: 'skarpalt';
  letter-spacing: 4px;
   padding: 15px 5px 15px 5px;
   text-align: center;
+  font-weight:bold;
   text-shadow: 0 1px 0 #3ab2cc;
-  width: 150px;
+  width: 280px;
 }
 
   .clean-gray:hover {
@@ -594,11 +596,11 @@ transform: rotate(1deg);
 	padding: 60px 0px 60px 0px;
 	text-align: center;
 }
-#process h1{
+#process h1, #pinterest h1{
 	text-align: center;
 	color: #333;
 	 font-family: 'skarpalt';
-	font-size: 50px;
+	font-size: 40px;
 }
 .box{
 	margin-top: 60px;
@@ -626,6 +628,7 @@ transform: rotate(1deg);
 .tools{
 	clear:both;
 	text-align: left;
+	padding-top: 40px;
 }
 
 .plus{
@@ -659,16 +662,26 @@ transform: rotate(1deg);
 
 #process h3{
 	font-size: 30px;
-	margin-top: 40px;
-	display: inline-block;
+	margin-top: 80px;
 	clear:both;
 	font-family: 'skarpalt';
-	text-align: left;
+	text-align: center;
 	letter-spacing: 4px;
 }
 .gatheringsFor{
 	clear:both;
 }
+
+#gatherings h2{
+	font-size: 40px;
+	margin-top: 80px;
+	clear:both;
+	color: #000000;
+	font-family: 'skarpalt';
+	text-align: center;
+	letter-spacing: 4px;
+}
+
 #gatherings h3{
 	color: #FFF;
 	margin-bottom: 10px;
@@ -686,16 +699,19 @@ transform: rotate(1deg);
 	display: inline-block;
 	padding: 10px;
 	font-family: 'skarpalt';
-
-}
-.gatheringsFor .content{
-	padding: 50px;
-	padding-bottom: 100px;
 }
 
+#gatherings p{
+	margin: 0 auto;
+	font-size: 14px;
+	margin-top: 10px;
+	margin-bottom: 100px;
+	width: 500px;
+	color: #999;
+}
 #gatherings{
 	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-bottom: 0px;
 }
 .gatheringsFor ul{
 	list-style: outside;
@@ -741,6 +757,7 @@ clear:both;
 .gatheringsFor .content{
 	padding: 0px;
 	padding-bottom: 100px;
+	padding: 50px;
 	max-width: 1170px;
 }
 .gatheringsFor .polaroid img {
@@ -798,14 +815,14 @@ transform: rotate(1deg);
 //////////////////////////////////////////////////////////// */
 #pinterest{
 padding: 100px;
-background: #FFFFFF;
+background: #EEEEEE;
 }
 .center {
 	margin: 0 auto;
 	width:817px;
 }
 #about{
-	background: #EEEEEE;
+	background: #FFFFFF;
 	padding: 100px 0px 100px 0px;
 }
 #about h1{
@@ -1201,15 +1218,16 @@ a#toptop{
 	position: relative;
 	top: -100px;
 }
-<<<<<<< HEAD
-#navbttn {
-	display: none;
-}
-=======
-
->>>>>>> parent of e7355f3... nothing
 
 @media only screen and (min-width: 1441px){
+#slogan .trans{
+	color: #FFFFFF;
+	background: rgba(1,1,1, .7);
+	display: inline-block;
+	font-size: 60px;
+	padding: 10px;
+	font-weight: bold;
+}
 #banner{
 	min-height: 700px;
 }
@@ -1260,6 +1278,16 @@ a.outline{
 	position: relative;
 	top: 0px;
 	margin-left: 100px;
+}
+}
+@media only screen and (max-width: 1300px){
+	#slogan .trans{
+	color: #FFFFFF;
+	background: rgba(1,1,1, .7);
+	display: inline-block;
+	font-size: 30px;
+	padding: 10px;
+	font-weight: bold;
 }
 }
 @media only screen and (max-width: 1240px){
@@ -1332,7 +1360,9 @@ max-width: 50%;
 }
 
 @media only screen and (max-width: 1023px){
-
+#slogan {
+	top: 10%;
+}
 .gatheringsFor ul{
 	list-style: outside;
 }
@@ -1479,12 +1509,13 @@ width: 85%;
 }
 
 @media only screen and (max-width: 640px){
-<<<<<<< HEAD
 header {
 	height: 50px;
+		text-align: center;
 }
 #logo {
 	margin: 0;
+	display: inline-block;
 }
 nav ul li a{
 	width: 100%;
@@ -1502,7 +1533,6 @@ nav ul li a{
 #navbttn {
 	display: block;
 	background:url(images/nav-button.png) center center no-repeat;
-	background-color: #ff62a1;
 	background-size: 65% auto;
 	position: fixed;
 	top: 0;
@@ -1516,8 +1546,6 @@ nav ul li a{
 #slogan, a.outline {
 	display: none;
 }
-=======
->>>>>>> parent of e7355f3... nothing
 #contact .content{
 text-align: center;
 }
