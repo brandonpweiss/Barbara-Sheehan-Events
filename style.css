@@ -239,9 +239,20 @@ nav ul li a#navcontact{
 	color: #000;
 	font-family: 'skarpalt';
 	position: absolute;
-	top: 30%;
-	left: 11%;
+	top: 20%;
+	right: 12%;
+	text-align: right;
 	z-index: 998;
+
+}
+#slogan .trans{
+	color: #FFFFFF;
+	background: rgba(1,1,1, .7);
+	display: inline-block;
+	font-size: 40px;
+	padding: 10px;
+	font-weight: bold;
+
 }
 
 #slogan #top{
