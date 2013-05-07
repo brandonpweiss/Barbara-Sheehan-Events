@@ -616,14 +616,10 @@ transform: rotate(1deg);
 .box h2{
 	color: #FFFFFF;
 	margin-bottom: 10px;
-	background: rgba(255,98,161,1);
+	background: rgb(255,98,161);
 	display: inline-block;
 	padding: 10px;
-	text-shadow: 1px 1px 1px #000;
-	filter: dropshadow(color=#000, offx=1, offy=1);
-	 font-family: 'skarpalt';
-	width: 150px;
-	font-weight: bold;
+	width: 180px;
 }
 .box p{
 	text-align: left;
@@ -692,21 +688,17 @@ transform: rotate(1deg);
 	color: #FFF;
 	margin-bottom: 10px;
 	text-align: center;
-	font-size: 30px;
 	margin-top: 40px;
 	display: inline-block;
 	clear:both;
-	font-family: 'skarpalt';
 	text-align: left;
-	font-size: 16px;
+	font-size: 18px;
+	font-weight: bold;
 	letter-spacing: 4px;
 	margin-bottom: 10px;
 	background: rgba(255,98,161,1);
 	display: inline-block;
 	padding: 10px;
-	font-family: 'skarpalt';
-		text-shadow: 1px 1px 1px #000;
-	filter: dropshadow(color=#000, offx=1, offy=1);
 }
 
 #gatherings p{
@@ -727,6 +719,7 @@ transform: rotate(1deg);
 .gatheringsFor ul li{
 	line-height: 30px;
 	font-size: 12px;
+	letter-spacing: 2px;
 	color: #000;
 }
 #gatherings #social, #gatherings #profit{
@@ -766,7 +759,7 @@ clear:both;
 	padding: 0px;
 	padding-bottom: 100px;
 	padding: 50px;
-	max-width: 1170px;
+	max-width: 1440px;
 }
 .gatheringsFor .polaroid img {
   border: 10px solid #fffff3;
@@ -841,10 +834,11 @@ background: #EEEEEE;
 #about p{
 	line-height: 18px;
 	font-size: 12px;
+	color: #000000;
 }
 #about #barbara{
 	position: relative;
-	top: -40px;
+	top: -20px;
 	margin-left: 100px;
 }
 #contact{
