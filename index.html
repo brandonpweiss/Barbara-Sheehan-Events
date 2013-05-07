@@ -31,6 +31,13 @@
 					$('#sticky_navigation_wrapper').slideToggle(250);
 			});
 		});
+		$(document).ready(function()
+		{
+			$('nav ul li').click(function()
+			{
+					$('#sticky_navigation_wrapper').slideToggle(250);
+			});
+		});
 
 	$(window).load(function() {
   		$('.flexslider').flexslider({
@@ -47,7 +54,7 @@
 $(function() {
 	// grab the initial top offset of the navigation
 	var nav_offset_top = $('nav').offset().top;
-	var dist_to_nav = nav_offset_top - 15;
+	var dist_to_nav = nav_offset_top;
 
 	// our function that decides weather the navigation bar should have "fixed" css position or not.
 	var sticky_navigation = function(){
@@ -205,8 +212,9 @@ $(function() {
 			<div class="gatheringsFor clearfix" id="social">
 				<div class="content clearfix">
 				<h3>Social</h3>
-				<div class="polaroid">
-				<img src="images/social2.jpg" alt="">
+				<div class="drop-shadow lifted rotated" style="float:right; margin-left:1em;">
+				<!-- <img src="images/social2.jpg" alt=""> -->
+				<div id="imgsocial"></div>
 				</div>
 				<ul>
 					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque cupiditate.</li>
@@ -220,8 +228,9 @@ $(function() {
 
 		<div class="gatheringsFor clearfix" id="good">
 			<div class="content clearfix">
-					<div class="polaroid2">
-						<img src="images/dancers.jpg" alt="">
+					<div class="drop-shadow lifted rotated-in" style="margin-right:1em;">
+						<!-- <img src="images/dancers.jpg" alt=""> -->
+						<div id="imgdance"></div>
 					</div>
 				<div class="right">
 				<h3>Good</h3>
@@ -238,8 +247,9 @@ $(function() {
 			<div class="gatheringsFor clearfix" id="profit">
 				<div class="content clearfix">
 				<h3>Profit</h3>
-				<div class="polaroid3">
-				<img src="images/7.png" alt="">
+				<div class="drop-shadow lifted rotated" style="float:right; margin-left:1em;">
+				<!-- <img src="images/7.png" alt=""> -->
+				<div id="imgtable"></div>
 				</div>
 				<ul>
 					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas suscipit.</li>
