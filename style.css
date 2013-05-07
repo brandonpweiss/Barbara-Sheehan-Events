@@ -614,7 +614,7 @@ transform: rotate(1deg);
 	padding-bottom: 50px;
 }
 .box h2{
-	color: #333;
+	color: #FFFFFF;
 	margin-bottom: 10px;
 	background: rgba(255,98,161,1);
 	display: inline-block;
@@ -622,8 +622,8 @@ transform: rotate(1deg);
 	text-shadow: 1px 1px 1px #000;
 	filter: dropshadow(color=#000, offx=1, offy=1);
 	 font-family: 'skarpalt';
-	color: #FFF;
 	width: 150px;
+	font-weight: bold;
 }
 .box p{
 	text-align: left;
@@ -705,6 +705,8 @@ transform: rotate(1deg);
 	display: inline-block;
 	padding: 10px;
 	font-family: 'skarpalt';
+		text-shadow: 1px 1px 1px #000;
+	filter: dropshadow(color=#000, offx=1, offy=1);
 }
 
 #gatherings p{
