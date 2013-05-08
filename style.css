@@ -1190,7 +1190,7 @@ footer a:hover{
                -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
                     box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
         }
-                .rotated-in > :first-child:before {
+       	.rotated-in > :first-child:before {
             content:"";
             position:absolute;
             z-index:-1;
@@ -1209,7 +1209,7 @@ footer a:hover{
        	width: 450px;
        	height: 300px;
        }
- .inner2{
+ 		.inner2{
        	background: url(images/results.jpg) 0 0 no-repeat;
        	width: 360px;
        	height: 250px;
@@ -1368,35 +1368,24 @@ a.outline{
 #profit h3{
 	margin-left: -20px;
 }
-
-.gatheringsFor .polaroid3 {
-	position: relative;
-	margin-top: 0px;
-	top: 60px;
-	-webkit-transform:rotate(1deg);
--moz-transform: rotate(1deg);
--o-transform: rotate(1deg);
--ms-transform: rotate(1deg);
-transform: rotate(1deg);
-max-width: 50%;
--webkit-backface-visibility:hidden; /*prevent rotated text in the caption being jagged in Chrome and Safari*/
-}
-
-.gatheringsFor .polaroid3 img {
-  border: 10px solid #fffff3;
-  border-bottom: 45px solid #fffff3;
-  -webkit-box-shadow: 3px 3px 3px 3px #999;
-     -moz-box-shadow: 3px 3px 3px 3px #999;
-          box-shadow: 3px 3px 3px 3px #999;
-          	max-width: 100%;
-}
-
 #process{
 	padding-bottom: 0px;
 }
-#buzz .polaroid{
-	max-width: 19%;
-	margin-right: 3%;
+
+#imgsocial {
+	background: url(images/social2.jpg)no-repeat;
+	height:336px;
+	width:500px;
+}
+#imgdance{
+	background: url(images/dancers.jpg)no-repeat;
+	height:336px;
+	width:500px;
+}
+#imgtable {
+	background: url(images/7.png)no-repeat;
+	height:336px;
+	width:500px;
 }
 }
 
