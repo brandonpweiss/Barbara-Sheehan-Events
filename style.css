@@ -1259,6 +1259,18 @@ a#toptop{
 	top: -100px;
 }
 
+#compelling{
+	background: #000000 url() 0 0 no-repeat;
+	text-align: center;
+	padding: 10px;
+	color: #FFFFFF;
+	font-size: 12px;
+}
+a.see{
+	color: rgb(255,98,161);
+	font-weight: bold;
+}
+
 @media only screen and (min-width: 1441px){
 #slogan .trans{
 	color: #FFFFFF;
@@ -1546,6 +1558,7 @@ header {
 #logo {
 	margin: 0;
 	display: inline-block;
+	width: 300px;
 }
 nav ul li a{
 	width: 100%;
@@ -1657,7 +1670,23 @@ footer{
 	/*background-size: cover;*/
 	/*height: 500px;*/
 }
+}
 
+@media only screen and (max-width: 400px){
+	header {
+	height: 50px;
+	text-align: left;
+}
+#logo {
+	display: inline-block;
+	max-width: 250px;
+	top: 5px;
+}
+ul.slides ul li img{
+	position: relative;
+	left: -500px;
+}
+}
 
 
 
