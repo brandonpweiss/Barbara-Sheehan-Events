@@ -1387,7 +1387,9 @@ a.see {
 	float: left;
 	width: 40%;
 }
-
+.dsi-right {
+	float:right;
+}
 @media only screen and (min-width: 1441px) {
 	#slogan .trans {
 	color: #FFFFFF;
@@ -1947,7 +1949,6 @@ footer {
 .gatheringsFor ul li {
 	margin-bottom: 15px;
 }
-
 }
 
 @media only screen and (max-width: 639px) {
@@ -1983,4 +1984,27 @@ ul.slides ul li img {
 	left: -500px;
 }
 
+}
+@media only screen and (max-width: 340px) {
+.dsi-right, .rotated-in {
+	float:left;
+}
+#imgsocial {
+	height: 250px;
+	width: 210px;
+}
+
+#imgdance {
+	height: 250px;
+	width: 210px;
+}
+
+#imgtable {
+	height: 250px;
+	width: 210px;
+}
+.inner {
+	width: 210px;
+	height: 250px;
+}
 }
