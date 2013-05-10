@@ -276,7 +276,6 @@ margin-top: 75px;
 	text-align: right;
 	z-index: 998;
 }
-
 #slogan .trans {
 	color: #FFFFFF;
 	background: rgba(1,1,1, .7);
@@ -1808,8 +1807,8 @@ nav ul li a {
 	width: 100%;
 	border-left: 0;
 	border-bottom: #CCCCCC solid thin;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 14px;
+	padding-bottom: 14px;
 }
 
 .fixed {

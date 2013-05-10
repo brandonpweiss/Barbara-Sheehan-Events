@@ -9,15 +9,17 @@
 	<link rel="stylesheet" href="flexslider.css">
 	<script src="jquery.js"></script>
 	<script src="jquery.fittext.js"></script>
-	<script src="waypoints.min.js"></script>
 	<script src="jquery.flexslider.js"></script>
+	<script src="modernizr.js"></script>
 		<script>
 
+/* ###### MOBILE NAV ###### */
 		$(window).resize(function()
 		{
 			if ($(window).width() > 640)
 			{
 				$('#sticky_navigation_wrapper').css('display', 'block');
+				$('#sticky_navigation_wrapper').removeClass('open');
 			}
 			else if ($(window).width() < 640)
 			{
@@ -29,53 +31,26 @@
 		{
 			$('#navbttn').click(function()
 			{
-					$('#sticky_navigation_wrapper').slideToggle(250);
+				$('#sticky_navigation_wrapper').toggleClass('open');
+				$('#sticky_navigation_wrapper').slideToggle(250);
 			});
 		});
-		/*
-		///// UNDER CONSTRUCTION /////////
-		$(function()
-		{
-			if ($(window).width() < 640) {
-			$('nav ul li').click(function()
-			{
-					$('#sticky_navigation_wrapper').slideToggle(250);
-			});
-		};
-		});
-		*/
-	$(window).load(function() {
-  		$('.flexslider').flexslider({
-   	 		animation: "slide",
-   	 		startAt: 0,
-   	 		initDelay: 0,
-   	 		touch: true,
-   	 		pauseOnHover: true
-  			});
-		});
-	</script>
-	<script src="modernizr.js"></script>
-		<script>
-	//When page loads, if window is greater than 640, run sticky nav, otherwise do not.
-	$(document).ready(function(){
-		if ($(window).width() > 640) {
-			$("#sticky_navigation_wrapper").waypoint(function(direction) {
-  				$("#sticky_navigation").toggleClass("fixed");
-			},  { offset: -360 });
-		};
-	});
-	//Check on resize wether to run sticky nav.
-	$(window).resize(function(){
-		if ($(window).width() > 640) {
-			$("#sticky_navigation_wrapper").waypoint(function(direction) {
-  				$("#sticky_navigation").toggleClass("fixed");
-			},  { offset: -360 });
-		};
-	});
 
-</script>
+/*###### MOBILE SLIDE UP NAV ON CLICK #######*/
+		$(document).ready(function()
+		{
+				$('nav ul li').click(function()
+				{
+					if (($(window).width() < 640)&&($('#sticky_navigation_wrapper').hasClass('open'))) {
+						$('#sticky_navigation_wrapper').removeClass('open');
+						$('#sticky_navigation_wrapper').slideToggle(250);
+					};
+				});
+		});
+
+	</script>
 </head>
-<body>
+	<body>
 	<a name="top" id="toptop"></a>
 	<header>
 		<div class="content">
@@ -83,6 +58,17 @@
 		</div>
 	</header>
 	<section id="carousel">
+		<script>
+			$(window).load(function() {
+	  			$('.flexslider').flexslider({
+		   	 		animation: "slide",
+		   	 		startAt: 0,
+		   	 		initDelay: 0,
+		   	 		touch: true,
+		   	 		pauseOnHover: true
+	  			});
+			});
+		</script>
 	<div class="flexslider">
 		<ul class="slides">
 		<li>
@@ -96,6 +82,7 @@
 		</li>
 		</ul>
 	</div>
+	<div id="holder"></div>
 	</section>
 		<div id="compelling">COMPLELLING EVENTS FOR SOCIAL GOOD AND PROFIT <a class="see">SEE OUR APPROACH ></a></div>
 	<div id="navbttn"></div>
@@ -289,7 +276,7 @@
 				<a name="interests" class="aa"></a>
 	<section id="pinterest">
 		<h1>INTERESTS</h1>
-<!-- 		<div class="center">
+		<!-- <div class="center">
 			<a class="foo" data-pin-do="embedBoard" href="http://pinterest.com/pinterest/pin-pets/" data-pin-scale-width="200" data-pin-scale-height="400" data-pin-board-width="1400"></a>
 		</div> -->
 		<div class="center">
@@ -299,24 +286,24 @@
 			<div id="pin4"><a data-pin-do="embedPin" href="http://pinterest.com/pin/99360735500167749/"></a></div>
 		</div>
 	</section>
-				<a name="about" class="aa"></a>
+	<a name="about" class="aa"></a>
 	<section id="about">
 
 		<div class="content clearfix">
-		<h1>ABOUT BARBARA SHEEHAN EVENTS</h1>
-		<div class="drop-shadow lifted rotated" id="barbara">
-			<div class="inner"></div>
-		</div>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis beatae consequatur ab expedita sunt cum ut nesciunt reiciendis mollitia deserunt corrupti natus officiis tenetur tempore illum. Sunt vitae voluptatibus optio dignissimos perspiciatis ea soluta totam laudantium itaque voluptate culpa fugiat. Voluptatem sapiente nihil voluptate delectus blanditiis beatae omnis deserunt quaerat architecto praesentium accusamus ex recusandae. Autem eaque dicta fugit necessitatibus atque ab. Culpa obcaecati architecto veniam molestiae nesciunt inventore quasi temporibus praesentium accusamus nostrum dolorem suscipit labore natus corporis impedit omnis eaque vel ipsum sit distinctio molestias tenetur at rerum voluptatum neque beatae voluptatibus eos alias in perferendis. Architecto voluptatem.</p><br>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi veniam earum voluptates eaque dolor quo magnam saepe ducimus aperiam necessitatibus quam vitae vero laudantium dicta nam sed id consectetur voluptatum iste iusto. Iure vitae reiciendis distinctio velit fugiat vero veniam soluta tenetur minima commodi fuga expedita perspiciatis autem incidunt dolorum quis temporibus vel deleniti! Maxime facilis quisquam nihil autem dicta a assumenda explicabo repudiandae sapiente incidunt officiis neque aliquid nemo iste facere magnam voluptate. Delectus veritatis nam ducimus ut magni </p>
+			<h1>ABOUT BARBARA SHEEHAN EVENTS</h1>
+			<div class="drop-shadow lifted rotated" id="barbara">
+				<div class="inner"></div>
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis beatae consequatur ab expedita sunt cum ut nesciunt reiciendis mollitia deserunt corrupti natus officiis tenetur tempore illum. Sunt vitae voluptatibus optio dignissimos perspiciatis ea soluta totam laudantium itaque voluptate culpa fugiat. Voluptatem sapiente nihil voluptate delectus blanditiis beatae omnis deserunt quaerat architecto praesentium accusamus ex recusandae. Autem eaque dicta fugit necessitatibus atque ab. Culpa obcaecati architecto veniam molestiae nesciunt inventore quasi temporibus praesentium accusamus nostrum dolorem suscipit labore natus corporis impedit omnis eaque vel ipsum sit distinctio molestias tenetur at rerum voluptatum neque beatae voluptatibus eos alias in perferendis. Architecto voluptatem.</p><br>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi veniam earum voluptates eaque dolor quo magnam saepe ducimus aperiam necessitatibus quam vitae vero laudantium dicta nam sed id consectetur voluptatum iste iusto. Iure vitae reiciendis distinctio velit fugiat vero veniam soluta tenetur minima commodi fuga expedita perspiciatis autem incidunt dolorum quis temporibus vel deleniti! Maxime facilis quisquam nihil autem dicta a assumenda explicabo repudiandae sapiente incidunt officiis neque aliquid nemo iste facere magnam voluptate. Delectus veritatis nam ducimus ut magni </p>
 		</div>
 	</section>
 		<a name="contact" class="aa"></a>
 <section id="contact">
 	<div class="content clearfix">
-	<h1>CONTACT</h1>
+		<h1>CONTACT</h1>
 
-  <form name="contactform"  method="post" action="send_form_email.php">
+  	<form name="contactform"  method="post" action="send_form_email.php">
 
     <div class="column clearfix" id="col1">
       <input type="text" id="first_name" name="first_name" placeholder="Jane">
@@ -361,5 +348,40 @@
 	</footer>
 	<script type="text/javascript" src="scroll.js"></script>
 	<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+<script>
+/*####### STICKY NAV SCRIPT ##########*/
+(function(a) {
+	var nav_offset_top = $('nav').offset().top;
+	var i = 0;
+	$(window).scroll(function()
+	{
+		if (i <= 0) {
+			nav_offset_top = $('nav').offset().top - 65;
+			i = 1;
+		};
+	});
+
+	var sticky_navigation = function()
+	{
+
+		var scroll_top = $(window).scrollTop(); // our current vertical position from the top
+
+		if ((scroll_top > nav_offset_top)&&($(window).width() > 640))
+		{
+			$('#sticky_navigation').css({ 'position': 'fixed', 'top':65, 'left':0, 'z-index':999});
+		}
+		else
+		{
+			$('#sticky_navigation').css({ 'position': 'relative', 'top':0, 'left':0 });
+		}
+	};
+
+	$(window).scroll(function()
+	{
+		 sticky_navigation();
+	});
+
+})(jQuery);
+</script>
 </body>
 </html>
