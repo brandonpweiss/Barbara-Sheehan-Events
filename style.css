@@ -1310,6 +1310,20 @@ a.see{
 a.outline{
 /*top: 560px;*/
 }
+}
+
+@media only screen and (max-width: 1440px){
+.gatheringsFor ul li{
+	line-height: 30px;
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: #000;
+}
+
+.gatheringsFor #good{
+	outline: red solid thin;
+	
+}
 
 }
 
