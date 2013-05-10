@@ -150,7 +150,7 @@ padding: 10px;
   border: 1px solid #24869b;
   border-bottom: 1px solid #3ab2cc;
   border-radius: 3px;
-border:#3ab2cc solid thin;
+/*border:#3ab2cc solid thin; DUPLICATE*/
 -webkit-box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, .2);
 box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, .2);
 
@@ -686,7 +686,7 @@ transform: rotate(1deg);
 
 #gatherings h2{
 	font-size: 40px;
-	margin-top: 80px;
+	/*margin-top: 80px; too much space*/
 	clear:both;
 	color: #000000;
 	font-family: 'skarpalt';
@@ -697,17 +697,14 @@ transform: rotate(1deg);
 #gatherings h3{
 	color: #FFF;
 	margin-bottom: 10px;
-	text-align: center;
 	margin-top: 40px;
-	display: inline-block;
 	clear:both;
-	text-align: left;
+	text-align: center;
 	font-size: 18px;
 	font-weight: bold;
 	letter-spacing: 4px;
-	margin-bottom: 10px;
 	background: rgba(255,98,161,1);
-	display: inline-block;
+	display: block;
 	padding: 10px;
 }
 
@@ -728,10 +725,11 @@ transform: rotate(1deg);
 	list-style: outside;
 }
 .gatheringsFor ul li{
-	line-height: 30px;
-	font-size: 12px;
+	line-height: 20px;
+	font-size: 14px;
 	letter-spacing: 2px;
 	color: #000;
+	margin-bottom: 20px;
 }
 #gatherings #social, #gatherings #profit{
 	text-align: left;
@@ -739,9 +737,10 @@ transform: rotate(1deg);
 #gatherings #profit{
 clear:both;
 }
-#gatherings #social h3, #gatherings #profit h3{
-	position:relative;
-	left: 20%;
+#gatherings #social h3, #gatherings #profit h3, #gatherings #good h3{
+	margin: 0 auto 15px;
+	width: 100px;
+
 }
 .gatheringsFor img{
 	width: 500px;
@@ -757,14 +756,8 @@ clear:both;
 #gatherings #good img{
 	float:left;
 }
-#gatherings #good h3{
-	position: relative;
-}
 #gatherings #good ul{
 	text-align: left;
-}
-.gatheringsFor{
-	clear:both;
 }
 .gatheringsFor .content{
 	padding: 0px;
@@ -822,17 +815,28 @@ transform: rotate(1deg);
           	width: 500px;
 }
 
-/*/////////////////////////////////////////////////////////////
-############# PINTEREST ########################
-//////////////////////////////////////////////////////////// */
+/*############# PINTEREST ######################## */
 #pinterest{
-padding: 100px;
+padding: 100px 0;
 background: #EEEEEE;
 }
 .center {
 	margin: 0 auto;
-	width:817px;
+	width:968px;
+	max-width:100%;
+	display:block;
+	min-width: 237px;
+
 }
+#pin1, #pin2, #pin3, #pin4 {
+	padding-bottom: 25px;
+	width: 237px;
+	display: inline-block;
+}
+i {
+	display: none;
+}
+/*###########END PINTEREST#################*/
 #about{
 	background: #FFFFFF;
 	padding: 100px 0px 100px 0px;
@@ -931,7 +935,7 @@ form input.clean-gray{
 }
 
 
-.shadow#shadowTwo{
+.shadow #shadowTwo{
 	margin-top: -25px;
 	margin-bottom: -25px;
 }
@@ -1213,12 +1217,13 @@ footer a:hover{
             -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
                -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
                     box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-        }
+	}
 
        .inner{
        	background: url(images/barbara.jpg) 0 0 no-repeat;
        	width: 450px;
        	height: 300px;
+       	background-position: center;
        }
  		.inner2{
        	background: url(images/results.jpg) 0 0 no-repeat;
@@ -1237,18 +1242,21 @@ footer a:hover{
        }
 #imgsocial {
 	background: url(images/social2.jpg) no-repeat;
+	background-position: center;
 	background-size: cover;
 	height:336px;
 	width:500px;
 }
 #imgdance{
 	background: url(images/dancers.jpg) no-repeat;
+	background-position: center;
 	background-size: cover;
 	height:336px;
 	width:500px;
 }
 #imgtable {
 	background: url(images/7.png) no-repeat;
+	background-position: center;
 	background-size: cover;
 	height:336px;
 	width:500px;
@@ -1287,13 +1295,11 @@ a.see{
 .half_wrap_right{
 	float:right;
 	width: 40%;
-	margin-top: -60px;
 }
 
 .half_wrap_left{
 	float:left;
 	width: 40%;
-	margin-top: -60px;
 }
 @media only screen and (min-width: 1441px){
 #slogan .trans{
@@ -1357,16 +1363,16 @@ a.outline{
 	margin-left: 100px;
 }
 #imgsocial {
-	height:268px;
-	width:350px;
+	height:400px;
+	width:450px;
 }
 #imgdance{
-	height:268px;
-	width:350px;
+	height:400px;
+	width:450px;
 }
 #imgtable {
-	height:268px;
-	width:350px;
+	height:400px;
+	width:450px;
 }
 }
 @media only screen and (max-width: 1300px){
@@ -1395,9 +1401,16 @@ a.outline{
 .gatheringsFor .polaroid{
 	margin-top: 80px
 }
+.gatheringsFor ul{
+	padding: 0 15px;
+}
 }
 
-
+@media only screen and (max-width: 1170px){
+.center {
+	width: 484px;
+}
+}
 @media only screen and (max-width: 1024px){
 	#col2{
 		float:right;
@@ -1417,16 +1430,16 @@ a.outline{
 }
 
 #imgsocial {
-	height:168px;
-	width:250px;
+	height:300px;
+	width:325px;
 }
 #imgdance{
-	height:168px;
-	width:250px;
+	height:300px;
+	width:325px;
 }
 #imgtable {
-	height:168px;
-	width:250px;
+	height:300px;
+	width:325px;
 }
 }
 
@@ -1441,16 +1454,13 @@ a.outline{
 	line-height: 16px;
 	font-size: 12px;
 	color: #000;
+	margin-bottom: 10px;
 }
 #gatherings #social, #gatherings #profit{
 	text-align: left;
 }
 #gatherings #profit{
 clear:both;
-}
-#gatherings #social h3, #gatherings #profit h3{
-	position:relative;
-	left: 20%;
 }
 #gatherings #good{
 	width: 100%;
@@ -1469,9 +1479,6 @@ clear:both;
 	float:right;
 	width: 40%;
 	/*margin-top: -260px;*/
-}
-.gatheringsFor{
-	clear:both;
 }
 .gatheringsFor .content{
 	padding: 0px;
@@ -1578,7 +1585,25 @@ width: 85%;
 	max-width: 19%;
 }
 }
-
+@media only screen and (max-width: 768px){
+#imgsocial {
+	height:400px;
+	width:250px;
+}
+#imgdance{
+	height:400px;
+	width:250px;
+}
+#imgtable {
+	height:400px;
+	width:250px;
+}
+}
+@media only screen and (max-width: 700px){
+.center {
+	width: 237px;
+}
+}
 @media only screen and (max-width: 640px){
 /*use pos_wrapper to position relative or absolute elements center for mobile.*/
 .rotated, .rotated-in {
@@ -1590,7 +1615,7 @@ transform: rotate(0deg);
 }
 .pos_wrapper {
 	margin: 0 auto;
-	width:280px;
+	width:325px;
 }
 #gatherings #social h3,  #gatherings #good h3, #gatherings #profit h3{
 	margin: 0 auto 10px;
@@ -1603,6 +1628,7 @@ transform: rotate(0deg);
 	width: 100%;
 	float: none;
 	clear:both;
+	padding-top: 15px;
 }
 header {
 	height: 50px;
@@ -1617,6 +1643,8 @@ nav ul li a{
 	width: 100%;
 	border-left: 0;
 	border-bottom: #CCCCCC solid thin;
+	padding-top:10px;
+	padding-bottom:10px;
 }
 .fixed{
 	top:50px;
@@ -1712,6 +1740,24 @@ text-align: center;
 footer{
 	line-height: 40px;
 }
+#imgsocial {
+	height:250px;
+	width:300px;
+}
+#imgdance{
+	height:250px;
+	width:300px;
+}
+#imgtable {
+	height:250px;
+	width:300px;
+}
+.gatheringsFor ul {
+	padding: 0;
+}
+.gatheringsFor ul li{
+	margin-bottom: 15px;
+}
 }
 
 @media only screen and (max-width: 639px){
@@ -1721,11 +1767,10 @@ footer{
 	header img#logo{
 		width:318px;
 	}
-	#banner{
-	/*background: url(images/6.jpg) center center no-repeat;*/
-	/*background-size: cover;*/
-	/*height: 500px;*/
-}
+	.inner {
+	width: 300px;
+	height:250px;
+	}
 }
 
 @media only screen and (max-width: 400px){
