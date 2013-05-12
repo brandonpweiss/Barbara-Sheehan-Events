@@ -1402,6 +1402,11 @@ a.see:hover{
 .dsi-right {
 	float:right;
 }
+
+.flexslider ul.slides li img.smallslide{
+	display:none;
+}
+
 @media only screen and (min-width: 1441px) {
 	#slogan .trans {
 	color: #FFFFFF;
@@ -1863,8 +1868,8 @@ nav ul li a {
 }
 
 .flexslider .slides img {
-	min-height: 200px;
-	min-width: 640px;
+	min-height: 250px;
+	min-width: 400px;
 }
 
 .flexslider {
@@ -1986,6 +1991,12 @@ header img#logo {
 }
 
 @media only screen and (max-width: 400px) {
+.flexslider ul.slides li img.largeslide{
+	display:none;
+}
+.flexslider ul.slides li img.smallslide{
+	display:block;
+}
 	header {
 	height: 50px;
 	text-align: left;
@@ -2001,7 +2012,6 @@ ul.slides ul li img {
 	position: relative;
 	left: -500px;
 }
-
 }
 @media only screen and (max-width: 340px) {
 .dsi-right, .rotated-in {
