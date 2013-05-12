@@ -1862,8 +1862,14 @@ nav ul li a {
 	text-align: center;
 }
 
+.flexslider .slides img {
+	min-height: 200px;
+	min-width: 640px;
+}
+
 .flexslider {
 	margin: 50px 0 0 0 !important;
+	display: block;
 }
 
 #contact .content .column {
