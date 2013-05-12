@@ -350,23 +350,13 @@
 	<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
 <script>
 /*####### STICKY NAV SCRIPT ##########*/
-(function(a) {
-	var nav_offset_top = $('nav').offset().top;
+	var nav_pos = $('nav').offset().top;
 	var i = 0;
-	$(window).scroll(function()
+	var sticky_nav = function()
 	{
-		if (i <= 0) {
-			nav_offset_top = $('nav').offset().top - 65;
-			i = 1;
-		};
-	});
+		var top_pos = $(window).scrollTop(); // our current vertical position from the top
 
-	var sticky_navigation = function()
-	{
-
-		var scroll_top = $(window).scrollTop(); // our current vertical position from the top
-
-		if ((scroll_top > nav_offset_top)&&($(window).width() > 640))
+		if ( (top_pos > nav_pos) && ($(window).width() > 640) )
 		{
 			$('#sticky_navigation').css({ 'position': 'fixed', 'top':65, 'left':0, 'z-index':999});
 		}
@@ -378,10 +368,18 @@
 
 	$(window).scroll(function()
 	{
-		 sticky_navigation();
+		if (i <= 0)
+		{
+			nav_pos = $('nav').offset().top - 65;
+			i = 1;
+		};
+		 sticky_nav();
 	});
 
-})(jQuery);
+	$(window).resize(function()
+	{
+			nav_pos = $('nav').offset().top - 65;
+	});
 </script>
 </body>
 </html>
