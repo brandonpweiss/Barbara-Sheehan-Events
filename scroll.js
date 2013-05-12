@@ -24,6 +24,10 @@ $("#navevents").click(function() {
 $("#contactButton").click(function() {
    scrollToAnchor('contact');
 });
+$("#see").click(function() {
+   scrollToAnchor('approach');
+});
+
 $("#navinterests").click(function() {
    scrollToAnchor('interests');
 });

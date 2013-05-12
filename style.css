@@ -227,6 +227,8 @@ nav ul li a:hover {
 	color: #999;
 }
 
+
+
 nav ul li a#navcontact {
 	border-right: #CCCCCC solid thin;
 }
@@ -761,7 +763,7 @@ clear: both;
 	margin: 0 auto;
 	font-size: 14px;
 	margin-top: 10px;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 	max-width: 500px;
 	width: 100%;
 	color: #999;
@@ -962,6 +964,7 @@ i {
 form input {
 	font-size: x-large;
 	margin-top: 20px;
+	max-width: 280px;
 }
 
 form textarea {
@@ -985,6 +988,7 @@ form label {
 #col1 {
 	text-align: left;
 }
+
 
 #info {
 	color: #FFF;
@@ -1295,7 +1299,7 @@ footer a:hover {
 }
 
 .inner2 {
-	background: url(images/results.jpg) 0 0 no-repeat;
+	background: url(images/social2.jpg) center center no-repeat;
 	width: 360px;
 	height: 250px;
 }
@@ -1375,7 +1379,19 @@ a#toptop {
 a.see {
 	color: rgb(255,98,161);
 	font-weight: bold;
+	text-decoration:none;
+	-webkit-transition:color .3s ease-in-out;
+	-moz-transition:color .3s ease-in-out;
+	-o-transition:color .3s ease-in-out;
+	-ms-transition:color .3s ease-in-out;
+	transition:color .3s ease-in-out;
 }
+
+a.see:hover{
+	color: #eeeeee;
+}
+
+
 
 .half_wrap_right {
 	float: right;
