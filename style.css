@@ -233,10 +233,7 @@ nav ul li a#navcontact {
 	border-right: #CCCCCC solid thin;
 }
 
-.flexslider .slides img {
-	min-height: 300px;
-	min-width: 960px;
-}
+
 
 #banner {
 	/*background:  url(images/6.jpg) center center no-repeat;
@@ -1866,7 +1863,7 @@ nav ul li a {
 }
 
 .flexslider {
-	margin: 35px 0 0 0 !important;
+	margin: 50px 0 0 0 !important;
 }
 
 #contact .content .column {
