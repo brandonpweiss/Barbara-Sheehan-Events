@@ -81,7 +81,7 @@ table {
 }
 
 body {
-	font-family: helvetica;
+	font-family: arial;
 	letter-spacing: 2px;
 	font-weight: 100;
 	color: #888888;
@@ -204,17 +204,15 @@ nav ul li {
 
 nav ul li a {
 	text-decoration: none;
-	color: #000;
-	font-family: 'skarpalt';
-	padding-top: 8px;
+	color: #555555;
+	font-family: arial;
+	padding-top: 10px;
 	padding-bottom: 8px;
 	margin: -2px;
 	width: 15%;
 	height: 100%;
 	display: inline-block;
-	font-weight: 100;
 	font-size: 12px;
-
 	-webkit-transition: color .3s ease-in-out;
 	-moz-transition: color .3s ease-in-out;
 	-o-transition: color .3s ease-in-out;
@@ -382,7 +380,7 @@ a.outline:hover {
 /*callouts*/
 #callouts {
 	padding-top: 30px;
-	padding-bottom: 0px;
+	padding-bottom: 20px;
 }
 
 #callouts .content {
@@ -423,7 +421,7 @@ a.outline:hover {
 	padding: 0px 40px 20px 0px;
 	color: #555;
 	letter-spacing: 2px;
-	font-family: helvetica;
+	font-family: arial;
 	line-height: 20px;
 	position: relative;
 	width: 100%;
@@ -515,8 +513,8 @@ a.outline:hover {
 	left: 184px;
 }
 
-.shadow#shadowone {
-	margin-top: -100px;
+.shadowone {
+	margin-top: 0px;
 }
 
 #handshake {
@@ -527,59 +525,6 @@ a.outline:hover {
 #results {
 	position: relative;
 	top: 20px;
-}
-
-#buzz {
-	background: #EEEEEE;
-	padding: 50px 0px 50px 0px;
-}
-
-#buzz .content {
-	padding: 40px;
-
-	-webkit-box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, .5);
-	box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, .5);
-	background: #FFFFFF;
-	width: 91%;
-}
-
-#buzz h1 {
-	background: #3ab2cc url() 0 0 no-repeat;
-	font-family: 'skarpalt';
-	display: inline-block;
-	color: #FFF;
-	font-size: 30px;
-	text-shadow: 1px 1px 1px #000;
-	filter: dropshadow(color=#000, offx=1, offy=1);
-	padding: 10px;
-	margin-bottom: 10px;
-}
-
-#buzz p {
-	font-weight: 100;
-	line-height: 18px;
-	font-size: 12px;
-	color: #333;
-	font-family: helvetica;
-	letter-spacing: 2px;
-}
-
-#buzz .polaroid {
-	margin-top: 70px;
-	float: left;
-	width: 20%;
-	margin-right: 3%;
-
-	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
-	-ms-transform: rotate(0deg);
-	transform: rotate(0deg);
-	-webkit-backface-visibility: hidden; /*prevent rotated text in the caption being jagged in Chrome and Safari*/
-}
-
-#buzz .polaroid img {
-	width: 100%;
 }
 
 .polaroid {
@@ -640,46 +585,94 @@ a.outline:hover {
 	width: 49%;
 }
 
-.box p {
-	font-size: 12px;
-	font-weight: 100;
-	color: #333;
-	line-height: 15px;
-}
-
-#process {
-	padding: 60px 0px 60px 0px;
+#how {
+	padding: 0px 0px 60px 0px;
 	text-align: center;
 }
 
-#process h1,#pinterest h1 {
+#how h1,#pinterest h1 {
 	text-align: center;
 	color: #333;
 	font-family: 'skarpalt';
 	font-size: 40px;
 }
-
-.box {
-	margin-top: 60px;
-	text-align: center;
-	padding-bottom: 50px;
+/*-------------------------
+--------------------------
+-----how we work section-----
+-------------------------
+------------------------*/
+#how h1{
+	margin-top: 100px;
 }
 
-.box h2 {
+#how .content{
+	margin-top: 50px;
+}
+.col{
+	float:left;
+	width: 50%;
+	text-align: left;
+}
+
+.col .innerz{
+padding: 40px;
+}
+
+#how #col2{
+	float:right;
+	outline: #eeeeee solid thin;
+	text-align: center;
+}
+
+
+.here{
+	font-size: 30px;
+	font-family: skarpalt;
+}
+
+.col ul li{
+	padding: 10px;
+	font-size: 14px;
+	color: #FFFFFF;
+	margin: 20px 0px 20px 0px;
+	font-weight: bold;
+}
+
+.col ul li:nth-child(odd){
+ background: rgb(255, 98, 161); 
+}
+
+.col ul li:nth-child(even){ 
+background-color:#3ab2cc; 
+}
+
+
+.col h2 {
 	color: #FFFFFF;
 	margin-bottom: 10px;
 	background: rgb(255,98,161);
 	display: inline-block;
 	padding: 10px;
-	width: 180px;
+	width: 100px;
+	text-align: center;
 }
 
-.box p {
-	text-align: left;
+.col p {
 	line-height: 20px;
 	padding: 10px 60px 0px 60px;
-	text-align: justify;
+	text-align: left;
+	
 }
+
+
+#col1, #col1 p{
+	text-align: center;
+}
+
+#contact #col1{
+	text-align: left;
+}
+
 
 .tools {
 	clear: both;
@@ -719,7 +712,7 @@ a.outline:hover {
 	text-align: center;
 }
 
-#process h3 {
+#how h3 {
 	font-size: 30px;
 	margin-top: 80px;
 	clear: both;
@@ -730,6 +723,11 @@ a.outline:hover {
 
 .gatheringsFor {
 	clear: both;
+}
+
+#gatherings h1{
+	text-align: center;
+	font-size: 40px;
 }
 
 #gatherings h2 {
@@ -769,6 +767,7 @@ clear: both;
 #gatherings {
 	padding-top: 100px;
 	padding-bottom: 0px;
+	background: #eeeeee;
 }
 
 .gatheringsFor ul {
@@ -878,7 +877,7 @@ clear: both;
 /*############# PINTEREST ######################## */
 #pinterest {
 	padding: 100px 0;
-	background: #EEEEEE;
+	background: #FFFFFF;
 }
 
 .center {
@@ -901,20 +900,26 @@ i {
 
 /*###########END PINTEREST#################*/
 #about {
-	background: #FFFFFF;
-	padding: 100px 0px 100px 0px;
+	background: #eeeeee;
+	padding: 50px 0px 100px 0px;
 }
 
-#about h1 {
+ h1 {
 	font-family: 'skarpalt';
 	font-size: 30px;
+	color: #000000;
 	margin-bottom: 30px;
+}
+
+#about h3{
+	color: #555555;
+	margin-bottom: 10px;
 }
 
 #about p {
 	line-height: 18px;
 	font-size: 12px;
-	color: #000000;
+	color: #555555;
 }
 
 #about #barbara {
@@ -972,7 +977,7 @@ form textarea {
 
 form label {
 	color: #FFF;
-	font-family: helvetica;
+	font-family: arial;
 	font-size: x-small;
 }
 
@@ -982,9 +987,6 @@ form label {
 	text-align: center;
 }
 
-#col1 {
-	text-align: left;
-}
 
 
 #info {
@@ -998,7 +1000,7 @@ form label {
 form a {
 	text-decoration: none;
 	color: #FFF;
-	font-family: helvetica;
+	font-family: arial;
 	behavior: url(PIE.htc);
 	font-size: 25px;
 }
@@ -1029,6 +1031,10 @@ form input.clean-gray {
 	left: 0;
 	display: block;
 	border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+#shadowthree{
+	height: 30px;
 }
 
 #box {
@@ -1366,11 +1372,31 @@ a#toptop {
 }
 
 #compelling {
-	background: #000000 url() 0 0 no-repeat;
-	text-align: center;
-	padding: 10px;
+	background: rgba(1,1,1,.7);
+	text-align: right;
+	position: absolute;
+	top: 68%;
+	padding: 20px;
 	color: #FFFFFF;
-	font-size: 12px;
+	left: 50%;
+	font-size: 18px;
+	line-height: 30px;
+	z-index: 555;
+	font-family:arial;
+}
+
+.bracket{
+	background: #FFFFFF;
+	border-radius: 50%;
+	height: 20px;
+	color: #3ab2cc;
+	width: 20px;
+	text-shadow: 1px 1px 1px #555555;
+        filter: dropshadow(color=#000000, offx=1, offy=1);
+	display:inline-block;
+	padding:0px 8px 10px 0px;
+	position: relative;
+	font-size: 16px;
 }
 
 a.see {
@@ -1385,7 +1411,7 @@ a.see {
 }
 
 a.see:hover{
-	color: #eeeeee;
+	color: #777777;
 }
 
 
@@ -1443,10 +1469,9 @@ a.outline {
 }
 
 @media only screen and (max-width: 1229px) {
-	.resultsframe {
+.resultsframe {
 	display: none;
 }
-
 }
 
 @media only screen and (max-width: 1339px) {
@@ -1474,13 +1499,6 @@ a.outline {
 	-o-transition: color .3s ease-in-out;
 	-ms-transition: color .3s ease-in-out;
 	transition: color .3s ease-in-out;
-}
-
-.box p {
-	text-align: left;
-	line-height: 20px;
-	padding: 10px 30px 0px 30px;
-	text-align: justify;
 }
 
 #about #barbara {
@@ -1549,7 +1567,7 @@ a.outline {
 }
 
 @media only screen and (max-width: 1024px) {
-	#col2 {
+#col2 {
 	float: right;
 }
 
@@ -1566,8 +1584,8 @@ a.outline {
 	margin-left: -20px;
 }
 
-#process {
-	padding-bottom: 0px;
+#how {
+	padding-bottom: 40px;
 }
 
 #imgsocial {
@@ -1613,7 +1631,6 @@ a.outline {
 
 #gatherings #good {
 	width: 100%;
-	padding: 50px 0px 100px 0px;
 }
 
 #gatherings #good img {
@@ -1713,7 +1730,7 @@ a.outline {
 	max-width: 80%;
 }
 
-#process {
+#how {
 	padding-bottom: 0px;
 }
 
@@ -1752,6 +1769,40 @@ a.outline {
 }
 
 @media only screen and (max-width: 768px) {
+
+.col{
+	float:none;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.col#col1 .innerz{
+	padding: 0px;
+}
+
+
+#how .content{
+	text-align: center;
+}
+#how #col2{
+	float:none;
+	outline: 0;
+	text-align: center;	
+	width: 100%;
+	margin-left: -50%;
+	left: 50%;
+}
+
+
+
+.col p {
+	line-height: 20px;
+	padding: 0px 0px 0px 0px;
+	text-align: left;
+	
+}
+
+
 	#imgsocial {
 	height: 400px;
 	width: 250px;
@@ -1919,10 +1970,6 @@ nav ul li a {
 	width: 50%;
 	margin-left: -28%;
 	left: 50%;
-}
-
-.box {
-	float: none;
 }
 
 .left,.right {
