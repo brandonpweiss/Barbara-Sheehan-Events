@@ -585,6 +585,12 @@ a.outline:hover {
 	width: 49%;
 }
 
+/*-------------------------
+--------------------------
+-----how we work section-----
+-------------------------
+------------------------*/
+
 #how {
 	padding: 0px 0px 60px 0px;
 	text-align: center;
@@ -596,11 +602,7 @@ a.outline:hover {
 	font-family: 'skarpalt';
 	font-size: 40px;
 }
-/*-------------------------
---------------------------
------how we work section-----
--------------------------
-------------------------*/
+
 #how h1{
 	margin-top: 100px;
 }
@@ -612,6 +614,10 @@ a.outline:hover {
 	float:left;
 	width: 50%;
 	text-align: left;
+}
+
+.col p{
+	font-size: 14px;
 }
 
 .col .innerz{
@@ -629,12 +635,20 @@ padding: 40px;
 	font-size: 30px;
 	font-family: skarpalt;
 }
+.col ul{
+	display: inline-block;
+	width: 70%;
+}
 
 .col ul li{
 	padding: 10px;
 	font-size: 14px;
 	color: #FFFFFF;
 	margin: 20px 0px 20px 0px;
+	font-weight: 100;
+}
+.bold{
+	font-size: 14px;
 	font-weight: bold;
 }
 
@@ -659,14 +673,20 @@ background-color:#3ab2cc;
 
 .col p {
 	line-height: 20px;
-	padding: 10px 60px 0px 60px;
+	padding: 10px 60px 0px 0px;
 	text-align: left;
 	
 }
 
 
 #col1, #col1 p{
-	text-align: center;
+	text-align: left;
+}
+
+#col1 .innerz{
+	padding-top: 90px;
+	padding-left: 0px;
+	
 }
 
 #contact #col1{
@@ -721,6 +741,10 @@ background-color:#3ab2cc;
 	letter-spacing: 4px;
 }
 
+#events{
+		background: #eeeeee;
+}
+
 .gatheringsFor {
 	clear: both;
 }
@@ -754,32 +778,32 @@ clear: both;
 	padding: 10px;
 }
 
+
 #gatherings p {
 	margin: 0 auto;
-	font-size: 14px;
-	margin-top: 10px;
+	font-size: 16px;
+	margin-top: 70px;
 	margin-bottom: 50px;
-	max-width: 500px;
 	width: 100%;
-	color: #999;
+	color: #FFFFFF;	
 }
 
 #gatherings {
 	padding-top: 100px;
 	padding-bottom: 0px;
-	background: #eeeeee;
 }
 
 .gatheringsFor ul {
 	list-style: outside;
+	margin-top: 55px;
 }
 
 .gatheringsFor ul li {
 	line-height: 20px;
-	font-size: 14px;
+	font-size: 16px;
 	letter-spacing: 2px;
-	color: #000;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+	color: #FFFFFF;
 }
 
 #gatherings #social,#gatherings #profit {
@@ -802,10 +826,21 @@ clear: both;
 #gatherings #social .polaroid,#gatherings #profit .polaroid3 {
 	float: right;
 }
+#gatherings{
+	padding-bottom: 50px;
+}
 
+#gatherings #social{
+	width: 100%;
+	margin: 50px 0px 100px 0px;
+	background: rgba(58, 178, 204, 1);
+	border: white solid thick;
+}
 #gatherings #good {
 	width: 100%;
-	padding: 50px 0px 100px 0px;
+	margin: 50px 0px 100px 0px;
+	background: rgba(58, 178, 204, 1);
+		border: white solid thick;
 }
 
 #gatherings #good img {
@@ -817,10 +852,7 @@ clear: both;
 }
 
 .gatheringsFor .content {
-	padding: 0px;
-	padding-bottom: 100px;
-	padding: 50px;
-	max-width: 1440px;
+	padding: 0px 0px 0px 0px;
 }
 
 .gatheringsFor .polaroid img {
@@ -877,7 +909,8 @@ clear: both;
 /*############# PINTEREST ######################## */
 #pinterest {
 	padding: 100px 0;
-	background: #FFFFFF;
+	background: #eeeeee;
+	clear:both;
 }
 
 .center {
@@ -906,7 +939,7 @@ i {
 
  h1 {
 	font-family: 'skarpalt';
-	font-size: 30px;
+	font-size: 40px;
 	color: #000000;
 	margin-bottom: 30px;
 }
@@ -918,7 +951,7 @@ i {
 
 #about p {
 	line-height: 18px;
-	font-size: 12px;
+	font-size: 14px;
 	color: #555555;
 }
 
@@ -972,7 +1005,13 @@ form input {
 form textarea {
 	font-size: x-large;
 	margin-top: 20px;
+	width: 275px;
 	height: 175px;
+}
+
+#submit{
+	position: relative;
+	left: -5px;
 }
 
 form label {
@@ -1433,6 +1472,77 @@ a.see:hover{
 	display:none;
 }
 
+#how p#level{
+padding-top: 50px;
+clear: both;
+max-width: 980px;
+margin: 0 auto;
+line-height: 20px;
+font-weight: bold;
+}
+
+#social p{
+	line-height: 25px;
+	color: #FFFFFFF;
+}
+
+#events .wrap{
+	max-width: 1280px;
+}
+#services{
+	padding: 100px 0px 150px 0px;
+}
+#services .content{
+	text-align: center;
+}
+#contentinner{
+	display: inline-block;
+	width: 1280px;
+}
+#services h1{
+	text-align: center;
+	padding-bottom: 50px;
+	font-size: 40px;
+}
+#services ul{
+	background: #c2ecf4;
+	float: left;
+	width: 20%;
+	margin-right: 2.4%;
+	margin-left: 2.4%;
+	text-align: center;
+	min-height: 570px;
+	padding-top: 20px;
+	border: #cccccc solid thin;
+	-webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding-bottom: 20px;
+}
+#services li.listname{
+	background: #ee3c7a;
+	color: #FFFFFF;
+	font-weight: bold;
+	margin-bottom: 40px;
+	padding: 6px 0px 4px 0px;
+	width: 102%;
+	border-top: none;
+	margin: 0 auto;
+	margin-left: -1%;
+	-webkit-box-shadow:  1px 1px 1px 1px rgba(1, 1, 1, .1);
+        box-shadow:  1px 1px 1px 1px rgba(1, 1, 1, .1);
+}
+#services ul li.listfirst{
+	margin-top: 10px;
+	border-top: none;
+}
+#services ul li{
+	line-height: 25px;
+	border-top: #cccccc solid thin;
+	width: 80%;
+	font-size: 12px;
+	margin: 0 auto;
+}
+
 @media only screen and (min-width: 1441px) {
 	#slogan .trans {
 	color: #FFFFFF;
@@ -1451,23 +1561,7 @@ a.outline {
 	/*top:  560px;
 	*/
 }
-
 }
-
-@media only screen and (max-width: 1440px) {
-	.gatheringsFor ul li {
-	line-height: 30px;
-	font-size: 12px;
-	letter-spacing: 1px;
-	color: #000;
-}
-
-.gatheringsFor #good {
-	outline: red solid thin;
-}
-
-}
-
 @media only screen and (max-width: 1229px) {
 .resultsframe {
 	display: none;
@@ -1506,6 +1600,7 @@ a.outline {
 	top: 0px;
 	margin-left: 100px;
 }
+
 
 #imgsocial {
 	height: 400px;
