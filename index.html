@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Barbara Sheehan Events</title>
-	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="flexslider.css">
@@ -21,7 +21,7 @@
 				$('#sticky_navigation_wrapper').css('display', 'block');
 				$('#sticky_navigation_wrapper').removeClass('open');
 			}
-			else if ($(window).width() < 640)
+			else if ($(window).width() <= 640)
 			{
 				$('#sticky_navigation_wrapper').css('display', 'none');
 			}
@@ -93,15 +93,18 @@
 		<div id="sticky_navigation">
 			<nav>
 				<ul>
-					<li><a href="#" id="navapproach">OUR APPROACH</a></li>
-					<li><a href="#" id="navevents">EVENTS</a></li>
-					<li><a href="#" id="navinterests">INTERESTS</a></li>
 					<li><a href="#" id="navabout">ABOUT US</a></li>
+					<li><a href="#" id="navapproach">HOW WE WORK</a></li>
+					<li><a href="#" id="navevents">EVENTS</a></li>
+					<li><a href="#" id="navservices">SERVICES</a></li>
+					<li><a href="#" id="navinterests">INTERESTS</a></li>
+					
 					<li><a href="#" id="navcontact">CONTACT</a></li>
 				</ul>
 			</nav>
 		</div>
 	</div>
+	<div id="compelling2">INNOVATE YOUR MARKETING. ACTIVATE YOUR BRAND<br><a href="#" id="see" class="see">SEE OUR APPROACH <span class="bracket">></span></a></div>
 	<section id="callouts" class="clearfix">
 		<div class="content clearfix">
 			<div class="callout clearfix">
@@ -110,7 +113,6 @@
 				<p>Attract the target audience with programming shaped to their interests and attitudes.</p>
 			<div class="drop-shadow lifted rotated resultsframe">
 			<div class="inner3">
-				<img src="images/manhead.png" id="manhead" alt="">
 			</div>
 		</div>
 		<a href="#" id="two">Learn More ></a>
@@ -124,6 +126,7 @@
 			</p>
 			<div class="drop-shadow lifted rotated resultsframe">
 			<div class="inner2">
+				<img src="images/activatehair.png" id="activatehair" alt="activatehair">
 			</div>
 		</div>
 			 <a href="#" id="one">Learn More ></a>
@@ -138,7 +141,7 @@
 				<p>Get results with programming that generates media coverage and social buzz.</p>
 			<div class="drop-shadow lifted rotated resultsframe">
 			<div class="inner4">
-				<img src="images/womanhead.png" id="womanhead"alt="">
+				<img src="images/head2.png" id="womanhead"alt="">
 			</div>
 			</div>
 			<a href="#" id="three">Learn More ></a>
@@ -263,7 +266,7 @@
 			<li>Lighting Design</li>
 			<li>Pyrotechnics & Special Effects</li>
 			<li>Scripting</li>
-			<li>Show Flow</li
+			<li>Show Flow</li>
 			<li>Social Media Campaigns</li>
 			<li>Stage & Set Design</li>
 			<li>Table Scape Design</li>

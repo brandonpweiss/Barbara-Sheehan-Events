@@ -509,9 +509,10 @@ a.outline:hover {
 
 #womanhead {
 	position: relative;
-	top: -72px;
-	left: 184px;
+	top: -74px;
+	left: 206px;
 }
+
 
 .shadowone {
 	margin-top: 0px;
@@ -828,6 +829,8 @@ clear: both;
 }
 #gatherings{
 	padding-bottom: 50px;
+	width: 95%;
+	margin: 0 auto;
 }
 
 #gatherings #social{
@@ -835,9 +838,9 @@ clear: both;
 	margin: 50px 0px 100px 0px;
 	background: rgba(58, 178, 204, 1);
 	border: white solid thick;
+	padding: 0px;
 }
 #gatherings #good {
-	width: 100%;
 	margin: 50px 0px 100px 0px;
 	background: rgba(58, 178, 204, 1);
 		border: white solid thick;
@@ -853,6 +856,8 @@ clear: both;
 
 .gatheringsFor .content {
 	padding: 0px 0px 0px 0px;
+	margin: 0 auto;
+	max-width: 95%;
 }
 
 .gatheringsFor .polaroid img {
@@ -1341,19 +1346,25 @@ footer a:hover {
 }
 
 .inner2 {
-	background: url(images/social2.jpg) center center no-repeat;
+	background: url(images/activatingbrands.jpg) center center no-repeat;
 	width: 360px;
 	height: 250px;
 }
 
+#activatehair {
+	position: relative;
+	top: -52px;
+	left: 132px;
+}
+
 .inner3 {
-	background: url(images/memories.jpg) 0 0 no-repeat;
+	background: url(images/group.jpg) 0 0 no-repeat;
 	width: 360px;
 	height: 250px;
 }
 
 .inner4 {
-	background: url(images/results.jpg) 0 0 no-repeat;
+	background: url(images/news.jpg) 0 0 no-repeat;
 	width: 360px;
 	height: 250px;
 }
@@ -1361,7 +1372,6 @@ footer a:hover {
 #imgsocial {
 	background: url(images/social2.jpg) no-repeat;
 	background-position: center;
-
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -1370,7 +1380,7 @@ footer a:hover {
 }
 
 #imgdance {
-	background: url(images/dancers.jpg) no-repeat;
+	background: url(images/table.jpg) no-repeat;
 	background-position: center;
 
 	-webkit-background-size: cover;
@@ -1422,6 +1432,9 @@ a#toptop {
 	line-height: 30px;
 	z-index: 555;
 	font-family:arial;
+}
+#compelling2{
+	display:none;
 }
 
 .bracket{
@@ -1541,6 +1554,7 @@ font-weight: bold;
 	width: 80%;
 	font-size: 12px;
 	margin: 0 auto;
+	color: #555555;
 }
 
 @media only screen and (min-width: 1441px) {
@@ -1562,14 +1576,9 @@ a.outline {
 	*/
 }
 }
-@media only screen and (max-width: 1229px) {
-.resultsframe {
-	display: none;
-}
-}
 
 @media only screen and (max-width: 1339px) {
-	.resultsframe #one {
+.resultsframe #one {
 	display: inline-block;
 }
 
@@ -1651,7 +1660,14 @@ a.outline {
 .gatheringsFor ul {
 	padding: 0 15px;
 }
+}
+@media only screen and (max-width: 1229px) {
 
+
+.resultsframe img{
+	width: 100%;
+	height: 100%;
+}
 }
 
 @media only screen and (max-width: 1170px) {
@@ -1662,6 +1678,21 @@ a.outline {
 }
 
 @media only screen and (max-width: 1024px) {
+
+#compelling {
+	background: rgba(1,1,1,.7);
+	text-align: right;
+	position: absolute;
+	top: 64%;
+	padding: 20px;
+	color: #FFFFFF;
+	left: 40%;
+	font-size: 18px;
+	line-height: 30px;
+	z-index: 555;
+	font-family:arial;
+}
+
 #col2 {
 	float: right;
 }
@@ -1692,7 +1723,6 @@ a.outline {
 	height: 300px;
 	width: 325px;
 }
-
 #imgtable {
 	height: 300px;
 	width: 325px;
@@ -1705,16 +1735,19 @@ a.outline {
 	top: 10%;
 }
 
+#gatherings #social, #gatherings #good{
+	max-height: 430px;
+}
+
+#gatherings #social p{
+	margin-top:30px;
+}
+
 .gatheringsFor ul {
 	list-style: outside;
 }
 
-.gatheringsFor ul li {
-	line-height: 16px;
-	font-size: 12px;
-	color: #000;
-	margin-bottom: 10px;
-}
+
 
 #gatherings #social,#gatherings #profit {
 	text-align: left;
@@ -1864,6 +1897,19 @@ a.outline {
 }
 
 @media only screen and (max-width: 768px) {
+#compelling {
+	background: rgba(1,1,1,.7);
+	text-align: right;
+	position: absolute;
+	top: 60%;
+	padding: 20px;
+	color: #FFFFFF;
+	left: 26%;
+	font-size: 16px;
+	line-height: 30px;
+	z-index: 555;
+	font-family:arial;
+}
 
 .col{
 	float:none;
@@ -1912,6 +1958,23 @@ a.outline {
 	height: 400px;
 	width: 250px;
 }
+#services ul{
+	background: #c2ecf4;
+	float: none;
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	text-align: center;
+	min-height: 570px;
+	padding-top: 20px;
+	border: #cccccc solid thin;
+	-webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding-bottom: 20px;
+}
+.callout p{
+	height: 100px;
+}
 
 }
 
@@ -1931,15 +1994,56 @@ a.outline {
 	-ms-transform: rotate(0deg);
 	transform: rotate(0deg);
 }
-
+.callout p{
+	height: auto;
+}
 .rotated-in {
 	float: right;
 	margin: 0 !important;
+}
+#compelling{
+	display:none;
+}
+#compelling2 {
+	background: rgba(1,1,1,.7);
+	display:block;
+	text-align: right;
+	padding: 20px;
+	color: #FFFFFF;
+	font-size: 18px;
+	line-height: 30px;
+	z-index: 555;
+	font-family:arial;
+}
+
+.bracket{
+	background: none;
+	border-radius: 0;
+	height: 20px;
+	color: #3ab2cc;
+	width: 20px;
+	text-align: center;
+	text-shadow: 1px 1px 1px #555555;
+        filter: dropshadow(color=#000000, offx=1, offy=1);
+	display:inline-block;
+	padding:0px;
+	position: relative;
+	top: 5px;
+	font-size:30px;
 }
 
 .pos_wrapper {
 	margin: 0 auto;
 	width: 325px;
+}
+
+#how{
+	padding-bottom: 100px;
+}
+
+#gatherings #social, #gatherings #good{
+	max-height: 700px;
+	padding-top:50px;
 }
 
 #gatherings #social h3,#gatherings #good h3,#gatherings #profit h3 {
@@ -2130,6 +2234,19 @@ header img#logo {
 	height: 250px;
 }
 
+}
+@media only screen and (max-width: 480px){
+	#compelling2 {
+	background: rgba(1,1,1,.7);
+	display:block;
+	text-align: center;
+	padding: 10px;
+	color: #FFFFFF;
+	font-size: 14px;
+	line-height: 20px;
+	z-index: 555;
+	font-family:arial;
+}
 }
 
 @media only screen and (max-width: 400px) {
