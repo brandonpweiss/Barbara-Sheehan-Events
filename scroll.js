@@ -28,7 +28,7 @@ $("#contactButton").click(function() {
    scrollToAnchor('contact');
 });
 $("#see").click(function() {
-   scrollToAnchor('approach');
+   scrollToAnchor('how');
 });
 
 $("#navinterests").click(function() {
