@@ -10,8 +10,8 @@ $("#navbuzz").click(function() {
    scrollToAnchor('buzz');
 });
 
-$("#navapproach").click(function() {
-   scrollToAnchor('approach');
+$("#navhow").click(function() {
+   scrollToAnchor('how');
 });
 
 $("#navcontact").click(function() {
@@ -19,6 +19,9 @@ $("#navcontact").click(function() {
 });
 $("#navevents").click(function() {
    scrollToAnchor('events');
+});
+$("#navservices").click(function() {
+   scrollToAnchor('services');
 });
 
 $("#contactButton").click(function() {
