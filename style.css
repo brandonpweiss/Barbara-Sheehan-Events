@@ -796,7 +796,7 @@ background-color:#3ab2cc;
 
 /*############# PINTEREST ######################## */
 #pinterest {
-	padding: 100px 0;
+	padding: 50px 0;
 	background: #eeeeee;
 	clear:both;
 }
@@ -856,7 +856,7 @@ i {
 
 #contact {
 	padding: 50px 0px 50px 0px;
-	background: #000;
+	background: #333333;
 }
 
 #contact .content {
