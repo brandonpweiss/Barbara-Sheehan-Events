@@ -676,19 +676,6 @@ background-color:#3ab2cc;
 #contact #col1{
 	text-align: left;
 }
-#contact #col2{
-	text-align: center;
-	height: 350px;
-	
-}
-
-#contact #col2 .inner{
-	display:inline-block;
-	background: none;
-	text-align: left;
-	width: 280px;
-	
-}
 
 
 #how h3 {
@@ -872,7 +859,7 @@ i {
 }
 
 #contact {
-	padding: 50px 0px 100px 0px;
+	padding: 50px 0px 50px 0px;
 	background: #333333;
 }
 
@@ -922,6 +909,10 @@ form textarea {
 	height: 175px;
 }
 
+#submit{
+	position: relative;
+	left: -5px;
+}
 
 form label {
 	color: #FFF;
@@ -2200,9 +2191,7 @@ ul.slides ul li img {
 }
 }
 @media only screen and (max-width: 340px) {
-.bracket{
-	top: 5px;
-}
+
 .dsi-right, .rotated-in {
 	float:left;
 }
@@ -2227,20 +2216,5 @@ ul.slides ul li img {
 
 #contact .content{
 	width: 100%;
-}
-#gatherings{
-	width: 90%;
-}
-.column#info{
-	clear:both;
-	
-}
-.rotated{
-	position: relative;
-	left: -5px;
-}
-.rotated-in{
-	position: relative;
-	left: -5px;
 }
 }
