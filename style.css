@@ -109,10 +109,6 @@ header {
 header .content {
 	width: 95%;
 }
-.aa{
-	position:relative;
-	top: -100px;
-}
 #logo {
 	width: 445px;
 	margin: 0 auto;
@@ -1545,10 +1541,8 @@ a.outline {
 }
 
 @media only screen and (max-width: 1170px) {
-.center {
+	.center {
 	width: 484px;
-	margin: 0 auto;
-	text-align: center;
 }
 
 }
@@ -2191,7 +2185,6 @@ ul.slides ul li img {
 }
 }
 @media only screen and (max-width: 340px) {
-
 .dsi-right, .rotated-in {
 	float:left;
 }
