@@ -866,9 +866,9 @@ i {
 #about #barbara {
 	position: relative;
 	float: right;
-	top: -50px;
+	top: 10px;
 	margin-left: 50px;
-	margin-bottom: 0px;
+	margin-bottom: 100px;
 }
 
 #contact {
@@ -1431,13 +1431,15 @@ line-height: 16px;
 	padding-top: 20px;
 }
 #services li.listname{
-	color: #3ab2cc;
+	color: #000000;
 	text-align: center;
 	font-weight: bold;
 	margin-bottom: 40px;
 	padding: 6px 0px 4px 0px;
+	width: 102%;
 	border-top: none;
 	margin: 0 auto;
+	margin-left: -1%;
 	list-style: none;
 }
 #services ul li.listfirst{
@@ -1446,6 +1448,7 @@ line-height: 16px;
 }
 #services ul li{
 	line-height: 18px;
+	border-top: #cccccc solid thin;
 	padding: 5px 0px 5px 0px;
 	width: 80%;
 	font-size: 12px;
