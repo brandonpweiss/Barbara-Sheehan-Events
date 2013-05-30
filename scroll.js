@@ -40,17 +40,17 @@ $("#top").click(function() {
 });
 
 $("#learnmore").click(function() {
-   scrollToAnchor('approach');
+   scrollToAnchor('how');
 });
 
 $("#one").click(function() {
-   scrollToAnchor('approach');
+   scrollToAnchor('how');
 });
 $("#two").click(function() {
-   scrollToAnchor('approach');
+   scrollToAnchor('how');
 });
 $("#three").click(function() {
-   scrollToAnchor('approach');
+   scrollToAnchor('how');
 });
 
 

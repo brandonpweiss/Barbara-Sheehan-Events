@@ -741,11 +741,16 @@ background-color:#3ab2cc;
 	padding: 10px;
 }
 
-
+.title{
+	color: #FFFFFF;
+	padding-bottom: 10px;
+	display:block;
+}
 #gatherings p {
 	margin: 0 auto;
 	font-size: 12px;
 	width: 100%;
+	text-align:justify;
 	color: #FFFFFF;	
 }
 
@@ -758,7 +763,7 @@ background-color:#3ab2cc;
 
 .gatheringsFor ul {
 	list-style: outside;
-	margin-top: 35px;
+	margin-top: 30px;
 }
 
 .gatheringsFor ul li {
@@ -866,7 +871,7 @@ i {
 #about #barbara {
 	position: relative;
 	float: right;
-	top: -50px;
+	top: -30px;
 	margin-left: 50px;
 	margin-bottom: 0px;
 }
