@@ -91,7 +91,10 @@ body {
 	width: 76%;
 	margin: 0 auto;
 }
-
+h1{
+	position: relative;
+	z-index: 10;
+}
 header {
 	text-align: center;
 	color: #333;
@@ -637,7 +640,7 @@ padding: 40px;
 }
 
 .col ul li:nth-child(odd){
- background: rgb(255, 98, 161); 
+background-color:#3ab2cc; 
 }
 
 .col ul li:nth-child(even){ 
@@ -745,6 +748,8 @@ background-color:#3ab2cc;
 	color: #FFFFFF;
 	padding-bottom: 10px;
 	display:block;
+	font-size: 20px;
+	font-weight: bold;
 }
 #gatherings p {
 	margin: 0 auto;
@@ -1377,11 +1382,11 @@ a.see:hover{
 	color: #777777;
 }
 
-
-
 .half_wrap_right {
 	float: right;
 	width: 40%;
+	position: relative;
+	top: -8px;
 }
 
 .half_wrap_left {
@@ -1437,7 +1442,7 @@ line-height: 16px;
 }
 #services li.listname{
 	color: #3ab2cc;
-	text-align: center;
+	text-align: left;
 	font-weight: bold;
 	margin-bottom: 40px;
 	padding: 6px 0px 4px 0px;
@@ -1811,6 +1816,16 @@ a.outline {
 }
 
 @media only screen and (max-width: 768px) {
+#services li.listname{
+	color: #3ab2cc;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 40px;
+	padding: 6px 0px 4px 0px;
+	border-top: none;
+	margin: 0 auto;
+	list-style: none;
+}
 #services ul{
 	min-height: 0px;
 	height: auto;
