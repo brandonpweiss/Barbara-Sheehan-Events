@@ -850,6 +850,7 @@ i {
 #about {
 	background: #eeeeee;
 	padding: 50px 0px 50px 0px;
+	position: relative;
 }
 
  h1 {
@@ -1462,6 +1463,13 @@ line-height: 16px;
 	margin: 0 auto;
 	color: #333333;
 	list-style: outside;
+}
+img.badge{
+	position: absolute;
+	width: 130px;
+	left: 82%;
+	top: 60px;
+	z-index: 90;
 }
 
 @media only screen and (min-width: 1441px) {

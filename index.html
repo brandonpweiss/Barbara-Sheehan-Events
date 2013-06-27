@@ -11,44 +11,6 @@
 	<script src="jquery.fittext.js"></script>
 	<script src="jquery.flexslider.js"></script>
 	<script src="modernizr.js"></script>
-		<script>
-
-/* ###### MOBILE NAV ###### */
-		$(window).resize(function()
-		{
-			if ($(window).width() > 640)
-			{
-				$('#sticky_navigation_wrapper').css('display', 'block');
-				$('#sticky_navigation_wrapper').removeClass('open');
-			}
-			else if ($(window).width() <= 640)
-			{
-				$('#sticky_navigation_wrapper').css('display', 'none');
-			}
-		});
-
-		$(document).ready(function()
-		{
-			$('#navbttn').click(function()
-			{
-				$('#sticky_navigation_wrapper').toggleClass('open');
-				$('#sticky_navigation_wrapper').slideToggle(250);
-			});
-		});
-
-/*###### MOBILE SLIDE UP NAV ON CLICK #######*/
-		$(document).ready(function()
-		{
-				$('nav ul li').click(function()
-				{
-					if (($(window).width() < 640)&&($('#sticky_navigation_wrapper').hasClass('open'))) {
-						$('#sticky_navigation_wrapper').removeClass('open');
-						$('#sticky_navigation_wrapper').slideToggle(250);
-					};
-				});
-		});
-
-	</script>
 </head>
 	<body>
 	<a name="top" id="toptop"></a>
@@ -58,17 +20,6 @@
 		</div>
 	</header>
 	<section id="carousel">
-		<script>
-			$(window).load(function() {
-	  			$('.flexslider').flexslider({
-		   	 		animation: "slide",
-		   	 		startAt: 0,
-		   	 		initDelay: 0,
-		   	 		touch: true,
-		   	 		pauseOnHover: true
-	  			});
-			});
-		</script>
 	<div class="flexslider">
 		<ul class="slides">
 		<li>
@@ -161,6 +112,7 @@
 
 		<div class="content clearfix">
 			<h1>25 YEARS OF EXCELLENCE</h1>
+				<img class="badge" src="images/badge.png" alt="25 years experience, 1000 events">
 			<div class="drop-shadow lifted rotated" id="barbara">
 			<div class="inner"></div>
 			<p style="text-align: center; color: #000000;">"Work hard. Have fun. Enjoy every minute."</p><p style="color: #000000; text-align: center;">-Barbara Sheehan, President</p>
@@ -393,6 +345,55 @@
 	</footer>
 	<script type="text/javascript" src="scroll.js"></script>
 	<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+	<script>
+			$(window).load(function() {
+	  			$('.flexslider').flexslider({
+		   	 		animation: "slide",
+		   	 		startAt: 0,
+		   	 		initDelay: 0,
+		   	 		touch: true,
+		   	 		pauseOnHover: true
+	  			});
+			});
+		</script>
+<script>
+
+/* ###### MOBILE NAV ###### */
+		$(window).resize(function()
+		{
+			if ($(window).width() > 640)
+			{
+				$('#sticky_navigation_wrapper').css('display', 'block');
+				$('#sticky_navigation_wrapper').removeClass('open');
+			}
+			else if ($(window).width() <= 640)
+			{
+				$('#sticky_navigation_wrapper').css('display', 'none');
+			}
+		});
+
+		$(document).ready(function()
+		{
+			$('#navbttn').click(function()
+			{
+				$('#sticky_navigation_wrapper').toggleClass('open');
+				$('#sticky_navigation_wrapper').slideToggle(250);
+			});
+		});
+
+/*###### MOBILE SLIDE UP NAV ON CLICK #######*/
+		$(document).ready(function()
+		{
+				$('nav ul li').click(function()
+				{
+					if (($(window).width() < 640)&&($('#sticky_navigation_wrapper').hasClass('open'))) {
+						$('#sticky_navigation_wrapper').removeClass('open');
+						$('#sticky_navigation_wrapper').slideToggle(250);
+					};
+				});
+		});
+
+	</script>
 <script>
 /*####### STICKY NAV SCRIPT ##########*/
 	var nav_pos = $('nav').offset().top;
