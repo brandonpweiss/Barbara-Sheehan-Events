@@ -650,7 +650,7 @@ background-color:#3ab2cc;
 }
 
 
-.col h2 {
+.col h2{
 	color: #FFFFFF;
 	margin-bottom: 10px;
 	background: rgb(255,98,161);
@@ -704,7 +704,6 @@ background-color:#3ab2cc;
 	text-align: center;
 	letter-spacing: 4px;
 }
-
 #events{
 		background: #eeeeee;
 		padding: 50px;
@@ -881,6 +880,42 @@ a.css3button:active {
 	margin: 0 auto;
 	max-width: 100%;
 }
+
+/*categories*/
+#categories{
+	margin-top: 50px;
+}
+.category h2{
+	color: #FFFFFF;
+	background: rgb(255,98,161);
+	display: block;
+	padding: 10px;
+	width: 150px;
+	text-align: center;
+	margin: 40px 0px 10px 0px;
+}
+.portfolioitem{
+	display:inline-block;
+	width:214px;
+	text-align: center;
+	margin: 20px 0px;
+}
+.portfolioitem img{
+	width: 170px;
+}
+.caption{
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+a.portfolioitem:hover .lifted{
+	background: #fff08a;
+}
+a.portfolioitem:active .caption{
+	color: #999999;
+}
+/*end categories*/
+
 
 /*############# PINTEREST ######################## */
 #pinterest {
@@ -1108,11 +1143,12 @@ footer a:hover {
 	float: left;
 	padding: 1em;
 	background: #fff;
-
 	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
-
+.category .drop-shadow{
+	padding: .5em;
+}
 .drop-shadow:before,.drop-shadow:after {
 	content: "";
 	position: absolute;
@@ -1129,7 +1165,27 @@ footer a:hover {
 	border-radius: 4px;
 }
 
+
+
 .lifted:before,.lifted:after {
+	bottom: 15px;
+	left: 10px;
+	width: 50%;
+	height: 20%;
+	max-width: 300px;
+	max-height: 100px;
+
+	-webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+
+.category .lifted:before, .category .lifted:after {
 	bottom: 15px;
 	left: 10px;
 	width: 50%;
@@ -1151,6 +1207,15 @@ footer a:hover {
 	right: 10px;
 	left: auto;
 
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	transform: rotate(3deg);
+}
+.category .lifted:after {
+	right: 10px;
+	left: auto;
 	-webkit-transform: rotate(3deg);
 	-moz-transform: rotate(3deg);
 	-o-transform: rotate(3deg);
