@@ -180,6 +180,7 @@ a.button:hover {
 
 #sticky_navigation_wrapper {
 	height: 32px;
+	display:none;
 }
 
 #sticky_navigation {
@@ -563,6 +564,7 @@ a.outline:hover {
 	width: 49%;
 }
 
+
 /*-------------------------
 --------------------------
 -----how we work section-----
@@ -705,11 +707,78 @@ background-color:#3ab2cc;
 
 #events{
 		background: #eeeeee;
+		padding: 50px;
 }
 
 .gatheringsFor {
 	clear: both;
 }
+.gatheringsFor .left, .gatheringsFor .right{
+	min-width: 50%;	
+}
+.gatheringsFor .left .innerB, .gatheringsFor .right .innerB{
+	background: none;
+		padding: 40px;
+}
+
+a.css3button {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	display:inline-block;
+	color: #ffffff;
+	padding: 10px;
+	width: 95%;
+	min-width: 320px;
+	text-align: center;
+	margin-top: 75px;
+	text-decoration: none;
+	background: -moz-linear-gradient(
+		top,
+		#ff62a1 0%,
+		#f54c92);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#ff62a1),
+		to(#f54c92));
+	border: 1px solid #8297ad;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.5);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.5);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.5);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.7),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+
+a.css3button:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	display:inline-block;
+	color: #cccccc;
+	padding: 10px;
+	width: 95%;
+	min-width: 320px;
+	text-align: center;
+	margin-top: 75px;
+	text-decoration: none;
+	background: #ff62a1;
+	border: 1px solid #8297ad;
+	-moz-box-shadow:
+		none;
+	-webkit-box-shadow:
+		none;
+	box-shadow:
+	none;
+	text-shadow:
+		none;
+}
+
+
 
 #gatherings h1{
 	font-family: 'skarpalt';
@@ -745,30 +814,29 @@ background-color:#3ab2cc;
 }
 
 .title{
-	color: #FFFFFF;
+	color: #000000;
 	padding-bottom: 10px;
 	display:block;
-	font-size: 20px;
-	font-weight: bold;
+	font-family: skarpalt;
+	font-size: 30px;
+	font-weight: 100;
 }
 #gatherings p {
 	margin: 0 auto;
 	font-size: 12px;
-	width: 100%;
 	text-align:justify;
-	color: #FFFFFF;	
+	color: #000000;
+	margin-top: 40px;
 }
 
 #gatherings {
-	padding-top: 50px;
-	padding-bottom: 50px;
 	width: 78%;
 	margin: 0 auto;
 }
 
 .gatheringsFor ul {
 	list-style: outside;
-	margin-top: 30px;
+
 }
 
 .gatheringsFor ul li {
@@ -776,23 +844,17 @@ background-color:#3ab2cc;
 	font-size: 12px;
 	letter-spacing: 2px;
 	margin-bottom: 10px;
-	color: #FFFFFF;
+	color: #000000;
 }
 
 
 #gatherings #social{
-	margin: 50px 0px 50px 0px;
 	background: #FFFFFF;
-	background: rgb(58, 178, 204);
-	padding: 0px;
 	-webkit-box-shadow:  2px 2px 2px 2px rgba(1, 1, 1, .4);
         box-shadow:  2px 2px 2px 2px rgba(1, 1, 1, .4);
 }
 #gatherings #good {
-		margin: 50px 0px 50px 0px;
 	background: #FFFFFF;
-	background: rgb(58, 178, 204);
-	padding: 0px;
 	-webkit-box-shadow:  2px 2px 2px 2px rgba(1, 1, 1, .4);
         box-shadow:  2px 2px 2px 2px rgba(1, 1, 1, .4);
 }
@@ -800,7 +862,6 @@ background-color:#3ab2cc;
 #social p{
 	line-height: 20px;
 	color: #FFFFFFF;
-	margin-top: 50px;
 }
 
 #gatherings #good img {
@@ -1658,6 +1719,9 @@ a.outline {
 #how {
 	padding-bottom: 40px;
 }
+.gatheringsFor .left .innerB, .gatheringsFor .right .innerB{
+	padding: 15px;
+}
 }
 
 @media only screen and (max-width: 1023px) {
@@ -1937,7 +2001,6 @@ display:none;
 	height: 100px;
 }
 #sticky_navigation_wrapper {
-	display: none;
 	height: auto;
 	position: fixed;
 	top: 50px;
@@ -2155,6 +2218,17 @@ footer {
 
 .gatheringsFor ul li {
 	margin-bottom: 15px;
+}
+	img.badge{
+	position: absolute;
+	width: 130px;
+	left: 82%;
+	top: 60px;
+	display:none;
+	z-index: 90;
+}
+.gatheringsFor .left .innerB, .gatheringsFor .right .innerB{
+	padding: 40px;
 }
 }
 

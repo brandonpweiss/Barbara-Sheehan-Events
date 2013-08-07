@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="flexslider.css">
+	<link rel="stylesheet" href="animate.css">
 	<script src="jquery.js"></script>
 	<script src="jquery.fittext.js"></script>
 	<script src="jquery.flexslider.js"></script>
@@ -43,7 +44,7 @@
 			<img class="smallslide" src="images/slideshow/mobile/3.jpg">
 		</li>
 		</ul>
-		<div id="compelling">INNOVATE YOUR MARKETING. ACTIVATE YOUR BRAND.<br><a href="#" id="see" class="see">SEE OUR APPROACH <span class="bracket">></span></a></div>
+		<div id="compelling">INNOVATE YOUR MARKETING. ACTIVATE YOUR BRAND.<br><a href="#" id="see" class="see">SEE OUR APPROACH <span class="bracket animated">></span></a></div>
 	</div>
 	<div id="holder"></div>
 	</section>
@@ -161,32 +162,17 @@
 	<div class="wrap">
 		<a name="events" class="aa"></a>
 		<article id="gatherings">
-			<h1>OUR EVENTS</h1>
+			<h1>PORTFOLIO</h1>
 			<div class="gatheringsFor clearfix" id="social">
-				<div class="content clearfix">
-				<div class="pos_wrapper">
-				<div class="drop-shadow lifted rotated dsi-right">
-				<!-- <img src="images/social2.jpg" alt=""> commented out because dropshadow doesnt seem to work with embeded images-->
-				<div id="imgsocial"></div>
-				</div>
-				</div>
-				<div class="half_wrap_left">
-					<br><br><br>
+				<div class="left">
+				<div class="innerB">
 				<p>Barbara Sheehan Events designs live marketing experiences that are original, fun and effective.We accomplish this with striking interiors, tantalizing menus, great entertainment and powerful content that reflects the client’s unique personality and style.
 				</p>
-			</div>
+				<a href="categories.php" class="animated css3button">VIEW OUR PORTFOLIO EXAMPLES ></a>
 				</div>
-			</div>
-
-		<div class="gatheringsFor clearfix" id="good">
-			<div class="content clearfix">
-				<div class="pos_wrapper">
-					<div class="drop-shadow lifted rotated-in">
-						<!-- <img src="images/dancers.jpg" alt=""> -->
-						<div id="imgdance"></div>
-					</div>
-				</div>
-				<div class="half_wrap_right">
+</div>
+<div class="right">
+	<div class="innerB">
 				<ul>
 					<span class="title">Types of Events:</span>
 					<li>Anniversary celebrations/galas </li>
@@ -200,8 +186,7 @@
 				</ul>
 				</div>
 			</div>
-		</div>
-		</div>
+			</div>
 		</article>
 </section>
 <a name="services" class="aa"></a>
@@ -279,16 +264,8 @@
 
 	<a name="interests" class="aa"></a>
 	<section id="pinterest">
-		<h1>INTERESTS</h1>
-		<!-- <div class="center">
-			<a class="foo" data-pin-do="embedBoard" href="http://pinterest.com/pinterest/pin-pets/" data-pin-scale-width="200" data-pin-scale-height="400" data-pin-board-width="1400"></a>
-		</div> -->
-		<div class="center">
-			<div id="pin1"><a data-pin-do="embedPin" href="http://pinterest.com/pin/99360735500167749/"></a></div>
-			<div id="pin2"><a data-pin-do="embedPin" href="http://pinterest.com/pin/99360735500167749/"></a></div>
-			<div id="pin3"><a data-pin-do="embedPin" href="http://pinterest.com/pin/99360735500167749/"></a></div>
-			<div id="pin4"><a data-pin-do="embedPin" href="http://pinterest.com/pin/99360735500167749/"></a></div>
-		</div>
+		<h1>CLIENTS LIST</h1>
+		
 	</section>
 	
 		<a name="contact" class="aa"></a>
@@ -366,7 +343,7 @@
 				$('#sticky_navigation_wrapper').css('display', 'block');
 				$('#sticky_navigation_wrapper').removeClass('open');
 			}
-			else if ($(window).width() <= 640)
+			else if ($(window).width() < 640)
 			{
 				$('#sticky_navigation_wrapper').css('display', 'none');
 			}
@@ -427,5 +404,22 @@
 			nav_pos = $('nav').offset().top - 65;
 	});
 </script>
+
+	<script>
+	$('.css3button').mouseover(function() {
+  $(this).addClass('tada');
+  $('.css3button').mouseout(function(){
+  	$(this).removeClass('tada');
+  }
+  	)
+});
+	$('.bracket').mouseover(function() {
+  $(this).addClass('tada');
+  $('.bracket').mouseout(function(){
+  	$(this).removeClass('tada');
+  }
+  	)
+});
+	</script>
 </body>
 </html>
