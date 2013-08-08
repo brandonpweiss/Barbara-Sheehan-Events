@@ -883,20 +883,23 @@ a.css3button:active {
 
 /*categories*/
 #categories{
-	margin-top: 50px;
+	background: #eeeeee;
 }
 .category h2{
 	color: #FFFFFF;
-	background: rgb(255,98,161);
+	background: rgb(58, 178, 204);
 	display: block;
 	padding: 10px;
 	width: 150px;
 	text-align: center;
-	margin: 40px 0px 10px 0px;
+}
+
+.category{
+	padding-bottom: 40px;
 }
 .portfolioitem{
 	display:inline-block;
-	width:214px;
+	width:210px;
 	text-align: center;
 	margin: 20px 0px;
 }
@@ -906,6 +909,7 @@ a.css3button:active {
 .caption{
 	margin-top: 10px;
 	font-weight: bold;
+	color: #777777;
 }
 
 a.portfolioitem:hover .lifted{
