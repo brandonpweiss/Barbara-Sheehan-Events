@@ -180,7 +180,7 @@ a.button:hover {
 
 #sticky_navigation_wrapper {
 	height: 32px;
-	display:none;
+	/*display:none;*/
 }
 
 #sticky_navigation {
@@ -407,12 +407,12 @@ a.outline:hover {
 .callout {
 	float: left;
 	width: 33.3%;
-	position: relative;	
+	position: relative;
 }
 
 .wrap {
 	max-width: 360px;
-	margin: 0 auto;	
+	margin: 0 auto;
 }
 
 .callout h2 {
@@ -642,11 +642,11 @@ padding: 40px;
 }
 
 .col ul li:nth-child(odd){
-background-color:#3ab2cc; 
+background-color:#3ab2cc;
 }
 
-.col ul li:nth-child(even){ 
-background-color:#3ab2cc; 
+.col ul li:nth-child(even){
+background-color:#3ab2cc;
 }
 
 
@@ -664,7 +664,7 @@ background-color:#3ab2cc;
 	line-height: 18px;
 	padding: 10px 60px 0px 0px;
 	text-align: left;
-	
+
 }
 
 
@@ -675,7 +675,7 @@ background-color:#3ab2cc;
 #col1 .innerz{
 	padding-top: 50px;
 	padding-left: 0px;
-	
+
 }
 
 #contact #col1{
@@ -684,7 +684,7 @@ background-color:#3ab2cc;
 #contact #col2{
 	text-align: center;
 	height: 350px;
-	
+
 }
 
 #contact #col2 .inner{
@@ -692,7 +692,7 @@ background-color:#3ab2cc;
 	background: none;
 	text-align: left;
 	width: 280px;
-	
+
 }
 
 
@@ -713,7 +713,7 @@ background-color:#3ab2cc;
 	clear: both;
 }
 .gatheringsFor .left, .gatheringsFor .right{
-	min-width: 50%;	
+	min-width: 50%;
 }
 .gatheringsFor .left .innerB, .gatheringsFor .right .innerB{
 	background: none;
@@ -736,7 +736,7 @@ a.css3button {
 		#ff62a1 0%,
 		#f54c92);
 	background: -webkit-gradient(
-		linear, left top, left bottom, 
+		linear, left top, left bottom,
 		from(#ff62a1),
 		to(#f54c92));
 	border: 1px solid #8297ad;
@@ -2031,7 +2031,7 @@ display:none;
 #how #col2{
 	float:none;
 	outline: 0;
-	text-align: center;	
+	text-align: center;
 	width: 100%;
 	margin-left: -50%;
 	left: 50%;
@@ -2040,7 +2040,7 @@ display:none;
 .col p {
 	line-height: 20px;
 	padding: 0px 0px 0px 0px;
-	text-align: left;	
+	text-align: left;
 }
 
 	#imgsocial {
@@ -2302,6 +2302,10 @@ footer {
 }
 
 @media only screen and (max-width: 639px) {
+#sticky_navigation_wrapper {
+	display:none;
+}
+
 .button {
 	display: none;
 }
@@ -2401,7 +2405,7 @@ ul.slides ul li img {
 }
 .column#info{
 	clear:both;
-	
+
 }
 .rotated{
 	position: relative;
