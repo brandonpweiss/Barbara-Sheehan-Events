@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Barbara Sheehan Events</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="flexslider.css">
+	<link rel="stylesheet" href="animate.css">
+	<link rel="stylesheet" href="sorry.css">
+	<script src="jquery.js"></script>
+	<script src="jquery.fittext.js"></script>
+	<script src="jquery.flexslider.js"></script>
+	<script src="modernizr.js"></script>
+</head>
+	<body>
+	<a name="top" id="toptop"></a>
+	<header>
+		<div class="content">
+		<a href="#" id="top"><img src="images/FinalLogo.jpg" id="logo" alt="Barbara Sheehan Events"></a>
+		</div>
+	</header>
+	<div class="sorry">
+		<div class="content">
+		<div class="oops">OOPS!</div>
+		<p>The browser that you are currently using does not support the features that we included on our website. <br>We offer our sincerest apologies, and kindly request that you try using one of the modern browsers below, so that you may experience our website how we intended.</p>
+		<div class="browsers">
+		<a class="browser" href="http://firefox.com/download" target="_blank"><img src="images/firefox.png" alt="Firefox"></a>
+		<a class="browser" href="http://www.google.com/chrome"><img src="images/chrome.png" alt="Chrome"></a>
+		<a class="browser" id="safari" href="http://www.apple.com/safari"><img src="images/safari.png" alt="Safari"></a> <br><br><BR></BR>
+		or <br> 
+		<a target="_blank" class="happy" href="http://browsehappy.com">LEARN MORE</a>
+		</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="scroll.js"></script>
+	<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+	<script>
+			$(window).load(function() {
+	  			$('.flexslider').flexslider({
+		   	 		animation: "slide",
+		   	 		startAt: 0,
+		   	 		initDelay: 0,
+		   	 		touch: true,
+		   	 		pauseOnHover: true
+	  			});
+			});
+		</script>
+<script>
+
+/* ###### MOBILE NAV ###### */
+		$(window).resize(function()
+		{
+			if ($(window).width() > 640)
+			{
+				$('#sticky_navigation_wrapper').css('display', 'block');
+				$('#sticky_navigation_wrapper').removeClass('open');
+			}
+			else if ($(window).width() < 640)
+			{
+				$('#sticky_navigation_wrapper').css('display', 'none');
+			}
+		});
+
+		$(document).ready(function()
+		{
+			$('#navbttn').click(function()
+			{
+				$('#sticky_navigation_wrapper').toggleClass('open');
+				$('#sticky_navigation_wrapper').slideToggle(250);
+			});
+		});
+
+/*###### MOBILE SLIDE UP NAV ON CLICK #######*/
+		$(document).ready(function()
+		{
+				$('nav ul li').click(function()
+				{
+					if (($(window).width() < 640)&&($('#sticky_navigation_wrapper').hasClass('open'))) {
+						$('#sticky_navigation_wrapper').removeClass('open');
+						$('#sticky_navigation_wrapper').slideToggle(250);
+					};
+				});
+		});
+
+	</script>
+<script>
+/*####### STICKY NAV SCRIPT ##########*/
+	var nav_pos = $('nav').offset().top;
+	var i = 0;
+	var sticky_nav = function()
+	{
+		var top_pos = $(window).scrollTop(); // our current vertical position from the top
+
+		if ( (top_pos > nav_pos) && ($(window).width() > 640) )
+		{
+			$('#sticky_navigation').css({ 'position': 'fixed', 'top':65, 'left':0, 'z-index':999});
+		}
+		else
+		{
+			$('#sticky_navigation').css({ 'position': 'relative', 'top':0, 'left':0 });
+		}
+	};
+
+	$(window).scroll(function()
+	{
+		if (i <= 0)
+		{
+			nav_pos = $('nav').offset().top - 65;
+			i = 1;
+		};
+		 sticky_nav();
+	});
+
+	$(window).resize(function()
+	{
+			nav_pos = $('nav').offset().top - 65;
+	});
+</script>
+
+	<script>
+	$('.css3button').mouseover(function() {
+  $(this).addClass('tada');
+  $('.css3button').mouseout(function(){
+  	$(this).removeClass('tada');
+  }
+  	)
+});
+	$('.bracket').mouseover(function() {
+  $(this).addClass('tada');
+  $('.bracket').mouseout(function(){
+  	$(this).removeClass('tada');
+  }
+  	)
+});
+	</script>
+</body>
+</html>
