@@ -92,7 +92,7 @@
 		</div>
 		</div>
 
-		
+
 
 		<div class="callout clearfix">
 			<div class="wrap clearfix">
@@ -192,169 +192,47 @@
 		<section id="categories">
 			<div class="content clearfix">
 			<div class="category">
-				<h2>Galas</h2>
-				<a href="blogpost.html" class="portfolioitem">
-						<div class="drop-shadow lifted">
-					<img src="images/7.png" alt="alt tag">
-					<div class="caption">ITEM TITLE</div>
-						</div>
-				</a>
-					<a href="blogpost.html" class="portfolioitem">
-						<div class="drop-shadow lifted">
-					<img src="images/7.png" alt="alt tag">
-					<div class="caption">ITEM TITLE</div>
-						</div>
-				</a>
-					<a href="blogpost.html" class="portfolioitem">
-						<div class="drop-shadow lifted">
-					<img src="images/7.png" alt="alt tag">
-					<div class="caption">ITEM TITLE</div>
-						</div>
-				</a>
-					<a href="blogpost.html" class="portfolioitem">
-						<div class="drop-shadow lifted">
-					<img src="images/7.png" alt="alt tag">
-					<div class="caption">ITEM TITLE</div>
-						</div>
-				</a>
-					<a href="blogpost.html" class="portfolioitem">
-						<div class="drop-shadow lifted">
-					<img src="images/7.png" alt="alt tag">
-					<div class="caption">ITEM TITLE</div>
-						</div>
-				</a>
-			</div>
-			<div class="category">
-				<h2>Entertainment</h2>
-					<a href="blogpost.html" class="portfolioitem">
-						<div class="drop-shadow lifted">
-					<img src="images/7.png" alt="alt tag">
-					<div class="caption">ITEM TITLE</div>
-						</div>
-				</a>
-					<a href="blogpost.html" class="portfolioitem">
-						<div class="drop-shadow lifted">
-					<img src="images/7.png" alt="alt tag">
-					<div class="caption">ITEM TITLE</div>
-						</div>
-				</a>
-					<a href="blogpost.html" class="portfolioitem">
-						<div class="drop-shadow lifted">
-					<img src="images/7.png" alt="alt tag">
-					<div class="caption">ITEM TITLE</div>
-						</div>
-				</a>
-					<a href="blogpost.html" class="portfolioitem">
-						<div class="drop-shadow lifted">
-					<img src="images/7.png" alt="alt tag">
-					<div class="caption">ITEM TITLE</div>
-						</div>
-				</a>
-					<a href="blogpost.html" class="portfolioitem">
-						<div class="drop-shadow lifted">
-					<img src="images/7.png" alt="alt tag">
-					<div class="caption">ITEM TITLE</div>
-						</div>
-				</a>
-			</div>
-			<div class="category">
-				<h2>Corporate Events</h2>
-					<a href="blogpost.html" class="portfolioitem">
-						<div class="drop-shadow lifted">
-					<img src="images/7.png" alt="alt tag">
-					<div class="caption">ITEM TITLE</div>
-						</div>
-				</a>
-					<a href="blogpost.html" class="portfolioitem">
-						<div class="drop-shadow lifted">
-					<img src="images/7.png" alt="alt tag">
-					<div class="caption">ITEM TITLE</div>
-						</div>
-				</a>
-					<a href="blogpost.html" class="portfolioitem">
-						<div class="drop-shadow lifted">
-					<img src="images/7.png" alt="alt tag">
-					<div class="caption">ITEM TITLE</div>
-						</div>
-				</a>
-					<a href="blogpost.html" class="portfolioitem">
-						<div class="drop-shadow lifted">
-					<img src="images/7.png" alt="alt tag">
-					<div class="caption">ITEM TITLE</div>
-						</div>
-				</a>
-					<a href="blogpost.html" class="portfolioitem">
-						<div class="drop-shadow lifted">
-					<img src="images/7.png" alt="alt tag">
-					<div class="caption">ITEM TITLE</div>
-						</div>
-				</a>
-			</div>
-			<div class="category">
-				<h2>Charitable Events</h2>
-					<a href="blogpost.html" class="portfolioitem">
-						<div class="drop-shadow lifted">
-					<img src="images/7.png" alt="alt tag">
-					<div class="caption">ITEM TITLE</div>
-						</div>
-				</a>
-					<a href="blogpost.html" class="portfolioitem">
-						<div class="drop-shadow lifted">
-					<img src="images/7.png" alt="alt tag">
-					<div class="caption">ITEM TITLE</div>
-						</div>
-				</a>
-					<a href="blogpost.html" class="portfolioitem">
-						<div class="drop-shadow lifted">
-					<img src="images/7.png" alt="alt tag">
-					<div class="caption">ITEM TITLE</div>
-						</div>
-				</a>
-					<a href="blogpost.html" class="portfolioitem">
-						<div class="drop-shadow lifted">
-					<img src="images/7.png" alt="alt tag">
-					<div class="caption">ITEM TITLE</div>
-						</div>
-				</a>
-					<a href="blogpost.html" class="portfolioitem">
-						<div class="drop-shadow lifted">
-					<img src="images/7.png" alt="alt tag">
-					<div class="caption">ITEM TITLE</div>
-						</div>
-				</a>
-			</div>
-			<div class="category">
-				<h2>Social Events</h2>
-					<a href="blogpost.html" class="portfolioitem">
-						<div class="drop-shadow lifted">
-					<img src="images/7.png" alt="alt tag">
-					<div class="caption">ITEM TITLE</div>
-						</div>
-				</a>
-					<a href="blogpost.html" class="portfolioitem">
-						<div class="drop-shadow lifted">
-					<img src="images/7.png" alt="alt tag">
-					<div class="caption">ITEM TITLE</div>
-						</div>
-				</a>
-					<a href="blogpost.html" class="portfolioitem">
-						<div class="drop-shadow lifted">
-					<img src="images/7.png" alt="alt tag">
-					<div class="caption">ITEM TITLE</div>
-						</div>
-				</a>
-					<a href="blogpost.html" class="portfolioitem">
-						<div class="drop-shadow lifted">
-					<img src="images/7.png" alt="alt tag">
-					<div class="caption">ITEM TITLE</div>
-						</div>
-				</a>
-					<a href="blogpost.html" class="portfolioitem">
-						<div class="drop-shadow lifted">
-					<img src="images/7.png" alt="alt tag">
-					<div class="caption">ITEM TITLE</div>
-						</div>
-				</a>
+<?php
+$caturl = "http://bpwtesting.com/LIVE_WEBSITES/sheehan/wordpress/?json=get_category_index";
+$catjson = file_get_contents($caturl,0,null,null);
+$categories = json_decode($catjson, true);
+
+$c = 0;
+$d = $categories['count'];
+
+while ($c < $d)
+{
+	$category = $categories['categories'][$c]['title'];
+
+	$posturl = "http://bpwtesting.com/LIVE_WEBSITES/sheehan/wordpress/?json=get_category_posts&slug=$category";
+	$postjson = file_get_contents($posturl,0,null,null);
+	$post = json_decode($postjson, true);
+
+	$b = $post['count'];
+	$a = 0;
+
+	echo '<h2>'.$category.'</h2>';
+
+	while ($a < $b)
+	{
+
+	$title = $post['posts'][$a]['title'];
+	$url = $post['posts'][$a]['url'];
+	$imageurl = $post['posts'][$a]['thumbnail_images']['full']['url'];
+
+	echo ('<a href="'.$url.'" class="portfolioitem">');
+	echo ('<div class="drop-shadow lifted">');
+	echo ('<img src="'.$imageurl .'" alt="alt tag">');
+	echo ('<div class="caption">'.$title.'</div>');
+	echo ('</div>');
+	echo ('</a>');
+
+	$a++;
+	}
+
+$c++;
+}
+?>
 			</div>
 			</div>
 </section>
@@ -434,9 +312,9 @@
 	<a name="interests" class="aa"></a>
 	<section id="pinterest">
 		<h1>CLIENTS LIST</h1>
-		
+
 	</section>
-	
+
 		<a name="contact" class="aa"></a>
 <section id="contact">
 	<div class="content clearfix">
