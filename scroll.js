@@ -42,16 +42,21 @@ $("#top").click(function() {
 $("#learnmore").click(function() {
    scrollToAnchor('how');
 });
-
+$("#navcasestudies").click(function() {
+   scrollToAnchor('casestudies');
+});
 $("#one").click(function() {
-   scrollToAnchor('how');
+   scrollToAnchor('about');
 });
 $("#two").click(function() {
-   scrollToAnchor('how');
+   scrollToAnchor('about');
 });
 $("#three").click(function() {
-   scrollToAnchor('how');
+   scrollToAnchor('about');
 });
 
+$("#getaquote").click(function() {
+   scrollToAnchor('contact');
+});
 
 

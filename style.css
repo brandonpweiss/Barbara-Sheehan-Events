@@ -91,6 +91,24 @@ body {
 	width: 76%;
 	margin: 0 auto;
 }
+/*landing page*/
+.landing{
+	text-align: center;
+	padding-top: 200px;
+}
+.landing img#logo2{
+	margin-bottom: -20px;
+	padding: 0px;
+	max-width: 100%;
+}
+.select{
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+a.click{
+	padding: 20px;
+}
+/*end landing page*/
 h1{
 	position: relative;
 	z-index: 10;
@@ -122,6 +140,7 @@ header .content {
 	display: block;
 	position: relative;
 }
+
 
 .fixed {
 	background: #fff url() 0 0 no-repeat;
@@ -416,6 +435,7 @@ a.outline:hover {
 }
 
 .callout h2 {
+	font-weight: bold;
 	color: #333;
 	font-family: 'skarpalt';
 	font-size: 20px;
@@ -609,64 +629,71 @@ a.outline:hover {
 }
 
 .col .innerz{
-padding: 40px;
+padding: 10px;
 }
 
 #how #col2{
-	background: #eeeeee;
+	background: -moz-linear-gradient(top, rgba(58,178,204,0.28) 0%, rgba(36,134,155,0.34) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(58,178,204,0.28)), color-stop(100%,rgba(36,134,155,0.34))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(58,178,204,0.28) 0%,rgba(36,134,155,0.34) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(58,178,204,0.28) 0%,rgba(36,134,155,0.34) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(58,178,204,0.28) 0%,rgba(36,134,155,0.34) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(58,178,204,0.28) 0%,rgba(36,134,155,0.34) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#473ab2cc', endColorstr='#5724869b',GradientType=0 ); /* IE6-9 */
+	color: #333333;
 	float:right;
 	outline: #eeeeee solid thin;
 	text-align: center;
+	padding: 25px 0px 50px 0px;
 }
 
+#how #col2 .innerz ul li{
+	color: #555555 !important;
+}
 
 .here{
-	font-size: 30px;
-	font-family: skarpalt;
+	font-size: 20px;
+	font-weight:normal;
+	color: #ffffff;
+	text-align: center;
+	display:block;
+	margin-bottom: 20px;
+	font-weight: bold;
 }
 .col ul{
 	display: inline-block;
-	width: 70%;
+	text-align: left;
 }
 
 .col ul li{
 	padding: 10px;
 	font-size: 12px;
-	color: #FFFFFF;
-	margin: 20px 0px 20px 0px;
+	color: #000000;
 	font-weight: 100;
+	font-style:italic;
+	line-height: 16px;
+	margin-bottom: 10px;
+}
+span.bold{
+	font-weight: bold;
 }
 .bold{
 	font-size: 12px;
 	font-weight: bold;
 }
 
-.col ul li:nth-child(odd){
-background-color:#3ab2cc;
-}
-
-.col ul li:nth-child(even){
-background-color:#3ab2cc;
-}
-
-
 .col h2{
-	color: #FFFFFF;
-	margin-bottom: 10px;
-	background: rgb(255,98,161);
+	color: #000000;
+	margin-bottom: 0px;
 	display: inline-block;
-	padding: 10px;
-	width: 100px;
-	text-align: center;
+	font-weight:bold;
 }
 
 .col p {
 	line-height: 18px;
 	padding: 10px 60px 0px 0px;
 	text-align: left;
-
 }
-
 
 #col1, #col1 p{
 	text-align: left;
@@ -726,10 +753,12 @@ a.css3button {
 	display:inline-block;
 	color: #ffffff;
 	padding: 10px;
-	width: 95%;
-	min-width: 320px;
+	position: relative;
+	margin-left: -155px;
+	left: 50%;
+	width: 310px;
 	text-align: center;
-	margin-top: 75px;
+	margin-top: 20px;
 	text-decoration: none;
 	background: -moz-linear-gradient(
 		top,
@@ -760,7 +789,6 @@ a.css3button:active {
 	display:inline-block;
 	color: #cccccc;
 	padding: 10px;
-	width: 95%;
 	min-width: 320px;
 	text-align: center;
 	margin-top: 75px;
@@ -881,6 +909,29 @@ a.css3button:active {
 	max-width: 100%;
 }
 
+.toolbox{
+	text-align: center;
+	clear:both;
+	padding: 40px 0px 40px 0px;
+	line-height: 20px;
+}
+
+.toolbox h2{
+color: rgb(255, 98, 161);
+font-size: 14px !important;
+font-weight: bold;
+}
+
+.toolbox p{
+	font-weight: bold;
+}
+section#services .toolbox{
+	padding: 40px 0px 0px 0px;
+}
+section#services .content .toolbox ul{
+	width: 100%;
+	min-height: 0px;
+}
 /*categories*/
 #categories{
 	background: #eeeeee;
@@ -899,12 +950,13 @@ a.css3button:active {
 }
 .portfolioitem{
 	display:inline-block;
-	width:210px;
 	text-align: center;
-	margin: 20px 0px;
+	margin: 20px 20px 40px 0px;
+	width: 23 0px;
+
 }
 .portfolioitem img{
-	width: 170px;
+	max-width: 170px;
 }
 .caption{
 	margin-top: 10px;
@@ -921,7 +973,7 @@ a.portfolioitem:active .caption{
 /*end categories*/
 
 
-/*############# PINTEREST ######################## */
+/*############# Interests ######################## */
 #pinterest {
 	padding: 50px 0;
 	background: #eeeeee;
@@ -942,11 +994,96 @@ a.portfolioitem:active .caption{
 	display: inline-block;
 }
 
-i {
+i{
 	display: none;
 }
 
-/*###########END PINTEREST#################*/
+/*Case Studies*/
+
+#showcases{
+padding-bottom: 100px;
+}
+.casestudy{
+	max-width: 237px;
+	margin: 0 auto;
+}
+
+.casestudy img{
+	max-width: 100%;
+}
+#showcases h1{
+	text-align: center;
+}
+.task{
+	padding-bottom: 10px;
+	font-size: 14px;
+	background: #ffffff;
+	min-height: 60px;
+}
+.itemTitle{
+	text-align: center;
+	max-width: 237px;
+	font-size: 15px;
+	color: #ffffff;
+background-color: #3ab2cc;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3ab2cc), color-stop(100%, #24869b));
+
+	background-image: -webkit-linear-gradient(top, #3ab2cc, #24869b);
+	background-image: -moz-linear-gradient(top, #3ab2cc, #24869b);
+	background-image: -o-linear-gradient(top, #3ab2cc, #24869b);
+	background-image: -ms-linear-gradient(top, #3ab2cc, #24869b);
+	background-image: linear-gradient(top, #3ab2cc, #24869b);
+		padding: 10px 0px 10px 0px;
+}
+.description{
+	background: #999999;
+	color: #ffffff;
+	text-align:left;
+	max-width: 237px;
+	padding: 10px 0px 10px 0px;
+	min-height: 190px;
+	font-size: 12px;
+}
+.innerbox{
+	padding: 10px;
+}
+/*end case studies*/
+
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.colzz {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+	text-align: center;	
+}
+.colzz:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+                                               
+					
+/*  GRID OF FOUR  */
+.span_1_of_4 {
+	width: 23.8%;
+}
+
+/*###########END INTERESTS#################*/
 #about {
 	background: #eeeeee;
 	padding: 50px 0px 50px 0px;
@@ -965,7 +1102,9 @@ i {
 #about h3{
 	color: #555555;
 	margin-bottom: 10px;
-	font-weight: bold;
+}
+span.bold.barbarasheehan{
+	text-decoration: underline;
 }
 
 #about p {
@@ -1396,6 +1535,7 @@ footer a:hover {
 #activatehair {
 	position: relative;
 	top: -35px;
+	display:none;
 	left: 108px;
 }
 
@@ -1415,6 +1555,7 @@ footer a:hover {
 	position: relative;
 	top: -58px;
 	left: 151px;
+	display:none;
 }
 
 #imgsocial {
@@ -1556,7 +1697,7 @@ line-height: 16px;
 }
 #services h1{
 	font-family: 'skarpalt';
-	font-size: 20px;
+	font-size: 25px;
 	letter-spacing: 4px;
 	color: #000000;
 	text-align: center;
@@ -1596,12 +1737,48 @@ line-height: 16px;
 }
 img.badge{
 	position: absolute;
-	width: 130px;
+	width: 180px;
 	left: 82%;
 	top: 60px;
 	z-index: 90;
 }
+section#clientsetc .columnn{
+float:left;
+background: #999999;
+max-width: 100%;
+min-height: 420px;
+}
 
+.columnnB{
+float:right !important;
+}
+section#clientsetc {
+	padding: 0px 0px 100px;
+}
+section#clientsetc .content{
+	max-width: 980px;
+}
+section#clientsetc .columnn .innerA{
+	padding: 50px;
+	max-width: 500px;
+	margin: 0 auto;
+	min-height: 350px;
+}
+section#clientsetc .columnn .innerA ul li{
+	list-style: circle;
+	color: #ffffff;
+	line-height: 22px;
+	font-size: 14px;
+}
+
+#clientsetc h3{
+	font-size: 20px;
+	font-family: 'skarpalt';
+	text-align: left;
+	font-weight:bold;
+	letter-spacing: 4px;
+	color: pink;
+}
 @media only screen and (min-width: 1441px) {
 	#slogan .trans {
 	color: #FFFFFF;
@@ -1687,12 +1864,6 @@ a.outline {
 	transition: color .3s ease-in-out;
 }
 
-.column#info {
-	float: none;
-	clear: both;
-	padding-top: 100px;
-}
-
 .gatheringsFor ul {
 	padding: 0 15px;
 }
@@ -1704,10 +1875,44 @@ a.outline {
 	margin: 0 auto;
 	text-align: center;
 }
-
+.column#info {
+	float: none;
+	clear: both;
+	padding-top: 100px;
+}
+nav ul li a {
+	text-decoration: none;
+	color: #555555;
+	font-family: arial;
+	padding-top: 10px;
+	padding-bottom: 8px;
+	margin: -2px;
+	width: 14%;
+	height: 100%;
+	display: inline-block;
+	font-size: 10px;
+	-webkit-transition: color .3s ease-in-out;
+	-moz-transition: color .3s ease-in-out;
+	-o-transition: color .3s ease-in-out;
+	-ms-transition: color .3s ease-in-out;
+	transition: color .3s ease-in-out;
+	border-left: #CCCCCC solid thin;
+}
 }
 
 @media only screen and (max-width: 1024px) {
+
+/*end case studies*/
+
+
+img.badge{
+	position: absolute;
+	width: 100px;
+	left: 88%;
+	top: 60px;
+	z-index: 90;
+}
+
 
 #social p{
 	line-height: 20px;
@@ -1723,7 +1928,7 @@ a.outline {
 	margin-bottom: 5px;
 }
 #barbara{
-	display:none;
+	display:none !important;
 }
 	#callouts{
 		padding-bottom: 40px;
@@ -1935,6 +2140,11 @@ a.outline {
 #about p {
 	margin-top: 50px;
 }
+
+#about p.quote{
+	margin-top: 0px !important;
+}
+
 
 /* commented out by RC was causing slogan to break apart on window resize.
 	/*#good {
@@ -2299,6 +2509,21 @@ footer {
 .gatheringsFor .left .innerB, .gatheringsFor .right .innerB{
 	padding: 40px;
 }
+#gatherings{
+	width: 100% !important;
+}
+#events{
+	padding: 10px;
+}
+.wrap a{
+	position: relative;
+	width: 100%;
+	margin-left: auto;
+	left: auto;
+}
+a.css3button{
+	margin-top: 20px;
+}
 }
 
 @media only screen and (max-width: 639px) {
@@ -2321,6 +2546,26 @@ header img#logo {
 
 }
 @media only screen and (max-width: 480px){
+	.colzz { 
+		margin: 1% 0 1% 0%;
+	}
+
+	.span_4_of_4 {
+		width: 100%; 
+	}
+	.span_3_of_4 {
+		width: 100%; 
+	}
+	.span_2_of_4 {
+		width: 100%; 
+	}
+	.span_1_of_4 {
+		width: 100%;
+	}
+section#clientsetc .content{
+	max-width: 980px;
+	width: 90%;
+}
 #compelling2 {
 	background: rgba(1,1,1,.7);
 	display:block;
@@ -2370,6 +2615,7 @@ ul.slides ul li img {
 	position: relative;
 	left: -500px;
 }
+
 }
 @media only screen and (max-width: 340px) {
 .bracket{
